@@ -2,7 +2,7 @@
 
 ---
 
-<img width="300" align='right' src="https://raw.githubusercontent.com/Timodz/Timodz/master/img/me.jpg">
+<img width="300" align='right' src="img/me.jpg">
 
 <div style="width:50%; text-align:justify;">
 🔭  I'm currently doing a Ph.D. in computer science, working on Spiking neural networks (SNNs) and interactive analysis. In addition, I'm a mobile app developer with a couple of years of experience—a big fan of Linux and Open Source.<br><br>
@@ -28,9 +28,9 @@ You can find in this <a href="https://github.com/Timodz/MyPresentations">reposit
 </p>
 
 <p align='center'>
-<a href="https://www.linkedin.com/in/elbez-hammouda/"><img height="30" src="https://raw.githubusercontent.com/Timodz/Timodz/master/img/linkedin.png"></a>
+<a href="https://www.linkedin.com/in/elbez-hammouda/"><img height="30" src="img/linkedin.png"></a>
 &nbsp;&nbsp;
-<a href="https://twitter.com/elbezhammouda"><img height="30" src="https://raw.githubusercontent.com/Timodz/Timodz/master/img/twitter.png"></a>
+<a href="https://twitter.com/elbezhammouda"><img height="30" src="img/twitter.png"></a>
 &nbsp;&nbsp;
-<a href="https://www.facebook.com/hammouda.Elbez"><img height="30" src="https://raw.githubusercontent.com/Timodz/Timodz/master/img/facebook.png"></a>
+<a href="https://www.facebook.com/hammouda.Elbez"><img height="30" src="img/facebook.png"></a>
 </p>
