@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<title>Soutenance de thèse de doctorat en Informatique</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/my_theme.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/github.css">
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+			<!-- Slides -->
+			<!-- id="stretch" -->
+				<section class="front">
+					<div class="info" style="text-align: center;">
+					<div class="author">Thèse de doctorat<br>Informatique</div>
+					<h2 style="padding-top: 50px">Visualisation interactive de traces de simulation <br>de réseaux neurones matériels à impulsions</h2>
+					<div class="author">Hammouda Elbez</div>
+					<div class="date">20 Juin 2022</div>
+					</div>
+
+					<div class="jury">
+						<div class="r-hstack">
+							<div class="r-vstack" style="align-items: normal;width: 50%;">
+							<div class="title">Superviseurs</div>
+							<div class="name">Pr. Pierre Boulet</div>
+							Université de Lille, France
+							<div class="name">Pr. Kamel Benhaoua</div>
+							Université de Mascara, Algérie
+							<br><br><br><br>
+							<div class="title">Invité</div>
+							<div class="name">Dr. Philippe Devienne</div>
+							CNRS, France
+							</div>
+							<div class="r-vstack" style="align-items: normal;width: 50%;">
+							<div class="title">Président</div>
+							<div class="name">Pr. Sidi Mohammed Benslimane</div>
+							Ecole Supèrieure en Informatique de Sidi Bel Abbès, Algérie
+							<br><br>
+							<div class="title">Examinateurs</div>
+							<div class="name">Dr. Ihsen Alouani</div>
+							Université Polytechnique Hauts-de-France, France
+							<div class="name">Pr. Fatima Debbat</div>
+							Université de Mascara, Algérie
+							<div class="name">Pr. Gilles Sassatelli</div>
+							CNRS, France
+							</div>
+						</div>
+					</div>
+
+					<div class="r-hstack" style="padding-top: 60px;">
+						<img src="img/logos/logo-ul.png" alt="", style="width: 250px; padding: 0px 50px;">
+						<img src="img/logos/logocristal.png" alt="", style="width: 230px; padding: 0px 50px;">
+						<img src="img/logos/logo-ircica.png" alt="", style="width: 260px; padding: 0px 50px;">
+						<img src="img/logos/logo-um.png" alt="", style="width: 310px; padding: 0px 50px;">
+					</div>
+				</section>
+
+				<section>
+					<div class="plan">
+							<ol class="plan-titles">
+								<li>Introduction</li>
+								<li>Motivation</li>
+								<li>Analyse Visuelle</li>
+								<li>Étude des techniques de visualisation dans les simulateurs SNN</li>
+								<li>VS2N: Outil de visualisation pour SNN</li>
+								<li>Compression progressif pour réseaux de neurones à impulsions</li>
+								<li>Conclusion</li>
+							</ol>
+					</div>
+				</section>
+
+				<section data-background="#425280">
+					<div class="internalTitle">
+						<h2><span style="font-size: 120px;">I</span>ntroduction</h2>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Réseaux de neurones dans différents domaines</h4>
+					<div class="content">
+						<div class="r-hstack">
+							<img src="img/images.png" alt="", style="width: 40vw;padding: 25px;">
+							<img src="img/medical.jpg" alt="", style="width: 30vw;padding: 25px;">
+							<img src="img/robotics.gif" alt="", style="width: 30vw;padding: 25px;">
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Les réseaux de neurones</h4>
+					<div class="content">
+						<div class="r-hstack" style="align-items: normal;">
+							<div style="width: 50vw;padding-right: 25px;">
+								Les réseaux de neurones sont très performants dans différentes tâches. Cependant, ils souffrent de l’effet de boîte noire.<br><br>
+								Les plus grands critiques des réseaux de neurones sont:<br>
+								<ul>
+									<li>l’énorme consommation d’énergie</li>
+									<li>le besoin de beaucoup de données pour être performant</li>
+								</ul>
+								<br>
+								<div class="statement fragment">
+								<div class="title" style="background-color:#425280;">Plus c’est profond, mieux sera le résultat</div>
+								<div class="content" style="text-align: center;padding: 0px;">
+									<img src="img/Inception.png" alt="", width="70%">
+								</div>
+								</div>
+							</div>
+							<div style="width: 50vw;padding-left: 25px;text-align: center;">
+								<img src="img/CNN.gif" alt="", width="85%">
+							</div>
+							</div>
+							<div class="r-hstack fragment" style="align-items: normal;">
+								<div style="width: 50vw;padding-right: 25px;">
+								<div class="statement">
+								<div class="title" style="background-color:#a11a1a;">Le besoin de puissance de calcul supplémentaire</div>
+								<div class="content">
+									- La limite de l’architecture de Von Neumann<br>
+									- La fin de la loi de Moore
+								</div>
+								</div>
+								</div>
+								<div style="width: 50vw;padding-left: 25px;text-align: center;">
+									<img src="img/hyperparameters.png" alt="", width="100%">
+								</div>
+							</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Réseaux de neurones à impulsions</h4>
+					<div class="content">
+					Les réseaux de neurones à impulsions permettent une consommation d’énergie ultra-faible et un parallélisme massif à l’aide du calcule neuromorphique.
+					<div class="r-hstack">
+						<div style="width: 50vw;padding-right: 25px;text-align: center;">
+							<img src="img/neuro.jpg" alt="">
+						</div>
+						<div style="width: 50vw;padding-right: 25px;text-align: center;">
+							<img src="img/energy.png" alt="">
+						</div>
+					</div>
+					<div class="reference">
+						Blouw, P., Choo, X., Hunsberger, E., & Eliasmith, C. (2019). Benchmarking Keyword Spotting Efficiency on Neuromorphic Hardware. In Proceedings of the 7th Annual Neuro-Inspired Computational Elements Workshop. Association for Computing Machinery.
+					</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Réseaux de neurones à impulsions</h4>
+					<div class="content">
+						<ul>
+							<li>Il nous manque une manière unifiée de créer et de former ce type de réseau</li>
+							<li>Absence d’une meilleure compréhension de l’activité lors de l’évolution du réseau</li>
+							<li>Il est plus difficile d’expliquer les résultats et d’analyser l’activité des SNN</li>
+							<li>La qualité de tout matériel neuromorphique dépend de la qualité du SNN</li>
+						</ul>
+
+						<div style="width: 100vw;text-align: center;">
+							<img src="img/SNN.gif" alt="", width="45%">
+						</div>
+						<div class="statement fragment">
+							<div class="title" style="background-color:#a11a1a;width: 90vw;">Pour ces raisons, les SNN sont sous-performants en termes de performances par rapport aux réseaux de neurones classiques.</div>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#425280">
+					<div class="internalTitle">
+						<h2><span style="font-size: 120px;">M</span>otivation</h2>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Motivation</h4>
+					<div class="content">
+						<ul>
+							<li>Absence de moyen d’analyser et de déboguer correctement un réseau de neurones à impulsions</li>
+							<li>Les nombreuses questions ouvertes liées aux neurosciences (règles d’apprentissage, mémoire, etc.) affectent le SNN.</li>
+						</ul>
+						<br><br>
+						<div class="statement fragment">
+						<div class="title" style="background-color:#1aa137;">Les objectifs</div>
+						<div class="content">
+							<ul>
+								<li>Proposer une autre façon d’examiner les réseaux de neurones en utilisant l’analyse visuelle.</li>
+								<li>Analysez l’activité du réseau pour mieux le comprendre et l’améliorer.</li>
+							</ul>
+						</div>
+						</div>
+						<br>
+						<div class="statement fragment">
+						<div class="title" style="background-color:#a11a1a;">Les défis</div>
+						<div class="content">
+							<ul>
+								<li>La nature spatio-temporelle des données peut être étudiée à plusieurs échelles.</li>
+								<li>L’analyse d’une énorme quantité de données tout en offrant un certain degré d’interactivité.</li>
+								<li>Proposer des améliorations au SNN sur la base de l’analyse visuelle.</li>
+								<li>Le manque d’outils pour l’analyse visuelle de l’activité interne du réseau de neurones.</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#425280">
+					<div class="internalTitle">
+						<h2><span style="font-size: 120px;">A</span>nalyse Visuelle</h2>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Analyse Visuelle</h4>
+					<div class="content">
+						<div class="r-hstack">
+							<div style="width: 45%;">
+								<img src="img/vis-analysis.png" alt="" width="90%"></div>
+							<div style="text-align: left;width: 55%;">
+								Class Activation Mapping (CAM, Grad-CAM, Grad-CAM++)
+								<img src="img/Grad-CAM.png" alt="" width="100%"></div>
+						</div>
+						<div class="reference">
+							Selvaraju et al., "Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization", IEEE International Conference on Computer Vision (ICCV), 2017
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Analyse Visuelle</h4>
+					<div class="content">
+						<div class="r-vstack">
+							<div style="text-align: left;">
+							Réseau de déconvolution : entraîner un autre réseau neuronal pour expliquer les résultats de votre réseau neuronal.
+							<img src="img/Deconv.png" alt="" width="100%">
+							</div>
+							<div class="r-hstack">
+							<div class="fragment" style="text-align: left;width: 55%;">
+								Réseau de neurones pour véhicule autonome
+								<img src="img/NNCars.jpeg" alt="" width="80%">
+							</div>
+							<div class="fragment" style="text-align: center;width: 45%;">
+								Que peut-il arriver dans ce cas ?
+								<img src="img/bicycle.JPG" alt="" width="70%">
+							</div>
+							</div>
+						</div>
+						<div class="reference">
+							H. Noh, S. Hong and B. Han, "Learning Deconvolution Network for Semantic Segmentation", IEEE International Conference on Computer Vision (ICCV), 2015
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#425280">
+					<div class="internalTitle">
+						<h2><span style="font-size: 120px;">V</span>isualisation dans les simulateurs SNN</h2>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Étude des techniques de visualisation dans des simulateurs SNN</h4>
+					<div class="content">
+						Une comparaison des techniques de visualisation proposées par les simulateurs SNN à des fins d’analyse.
+						<br><br>
+						<div class="highlight" style="font-weight: 600;">D’un point de vue technique :</div>
+						<br>
+						<div style="text-align: center;">
+						<img src="img/VisSimSNN1.png" alt="" width="80%">
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Étude des techniques de visualisation dans des simulateurs SNN</h4>
+					<div class="content">
+						Une comparaison des techniques de visualisation proposées par les simulateurs SNN à des fins d’analyse.
+						<br><br>
+						<div class="highlight" style="font-weight: 600;">Pour l’aspect visualisation :</div>
+						Nous avons utilisé sept critères de comparaison. Ces critères sont inspirés des travaux de Freitas et al. <span style="font-size: 24px;color: #425280;font-weight: bold;">[1]</span>, et Stephen Few <span style="font-size: 24px;color: #425280;font-weight: bold;">[2]</span>, et un autre critère important dans notre cas, est le niveau d’interactivité.
+						<br><br>
+						<ul>
+							<li><span class="highlight" style="font-weight: 600;">Utilité :</span> la visualisation fournit-elle des informations significatives ou non ?</li>
+							<li><span class="highlight" style="font-weight: 600;">Complétude :</span> la visualisation comprend tous les composants requis pour être facile à comprendre ou non</li>
+							<li><span class="highlight" style="font-weight: 600;">Perceptibilité :</span> simple à comprendre ou non</li>
+							<li><span class="highlight" style="font-weight: 600;">Véracité :</span> le degré de précision et de validité de la visualisation</li>
+							<li><span class="highlight" style="font-weight: 600;">Intuitivité :</span> le degré de familiarité de cette technique de visualisation pour l’utilisateur</li>
+							<li><span class="highlight" style="font-weight: 600;">Esthétique :</span> le design et la qualité de la technique de visualisation </li>
+							<li><span class="highlight" style="font-weight: 600;">Interactivité :</span>le niveau d’interactivité</li>
+						</ul>
+						
+						<div class="reference">
+							[1] C. M. D. S. Freitas, P. R. G. Luzzardi, R. A. Cava, M. Winckler, M. S. Pimenta, and L. P. Nedel, “On Evaluating Information Visualization Techniques,” AVI’02, (New York, NY, USA), pp. 373-374, ACM, 2002.<br>
+							[2] S. Few, “Data visualization effectiveness profile,” Perceptual Edge, vol. 10, p. 12, 2017
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Étude des techniques de visualisation dans des simulateurs SNN</h4>
+					<div class="content">
+						Une comparaison des techniques de visualisation proposées par les simulateurs SNN à des fins d’analyse.
+						<br><br>
+						<div class="highlight" style="font-weight: 600;">Pour l’aspect visualisation :</div>
+						<br>
+						<div style="text-align: center;">
+						<img src="img/VisSimSNN2.png" alt="" width="80%">
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Étude des techniques de visualisation dans des simulateurs SNN</h4>
+					<div class="content">
+						La conclusion :<br><br>
+						<ul>
+							<li>Nous avons mis l’accent sur la séparation du processus de simulation de celui de visualisation car les deux nécessitent des ressources considérables.</li>
+							<li>Les visualisations proposées par les simulateurs sont à des fins de surveillance et non d’analyse.</li>
+						</ul>
+						
+						<br><br>
+
+						<div class="statement fragment">
+							<div class="title" style="background-color:#425280;">Conclusion</div>
+							<div class="content">Il existe un besoin d’outils dédiés pour fournir une analyse visuelle de l’activité dans les SNN, des outils qui peuvent prendre en charge une analyse à grande échelle et fournir un degré d’interactivité et de support pour l’analyse dans le temps.</div>
+						</div>
+
+						<div class="reference">
+							H. Elbez, K. Benhaoua, P. Devienne, P. Boulet. Visualization Techniques in SNN Simulators. 3rd International Conference on Multimedia Information Processing, CITIM’2018, Oct 2018, Mascara, Algeria.
+						</div>
+						
+					</div>
+				</section>
+
+				<section data-background="#425280">
+					<div class="internalTitle">
+						<h2><span style="font-size: 120px;">V</span>S2N: Outil de visualisation pour SNN</h2>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Outils d’analyse visuelle</h4>
+					<div class="content">
+						<div class="r-hstack" style="padding-top: 28px;">
+							<div class="r-vstack" style="text-align: left; width: 30vw;">
+								LSTMVis
+								<img src="img/LSTMVis.png" alt="" width="100%">
+							</div>
+							<div class="r-vstack" style="text-align: left; width: 30vw;">
+								ViSimpl
+								<img src="img/ViSimpl.png" alt="" width="100%">
+							</div>
+							<div class="r-vstack" style="text-align: left; width: 30vw;">
+								VIOLA
+								<img src="img/VIOLA.jpg" alt="" width="100%">
+							</div>
+						</div>
+						<div style="padding-top: 28px;">
+							Caractéristiques communes:<br><br>
+							<ul>
+								<li>Outil à base Web.</li>
+								<li>Cibler un problème, une question ou un type de réseau spécifique.</li>
+								<li>Limité à être utilisé avec un simulateur spécifique ou un type de jeu de données.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>VS2N (<span style="font-weight: 500;font-size: 32px;"><span style="color: #425280;font-weight: bold;font-size: 40px;">V</span>isualization tool for <span style="color: #425280;font-weight: bold;font-size: 40px;">S</span>piking <span style="color: #425280;font-weight: bold;font-size: 40px;">N</span>eural <span style="color: #425280;font-weight: bold;font-size: 40px;">N</span>etworks</span>)</h4>
+					<div class="content">
+						VS2N est un outil Web d’analyse visuelle dynamique interactive pour les réseaux de neurones à impulsions.<br><br>
+						<div class="r-hstack fragment">
+							<div style="width: 30%;">
+								<ul>
+									<li>Scalabilité</li>
+									<li>Analyse dynamique</li>
+									<li>Nature modulaire</li>
+									<li>Indépendance du simulateur</li>
+								</ul>
+							</div>
+							<div style="width: 100%;text-align: center;">
+								<img src="img/backend.png" alt="" width="70%">
+							</div>
+						</div>
+						<div class="fragment">
+						Schéma de base de données
+						<div class="r-hstack" style="width: 100%;">
+							<div style="width: 35%;">
+								<img src="img/schemas.png" alt="">
+							</div>
+							<div style="width: 65%;text-align: center;">
+								<img src="img/schemas2.png" alt="" width="60%">
+							</div>
+						</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Modules de VS2N</h4>
+					<div class="content">
+						MODULE D’ANALYSE GÉNÉRALE
+						<div style="width: 100%;text-align: center;padding-top: 25px;">
+							<video data-autoplay width="80%" src="img/generalModule.m4v" loop="true"></video>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Modules de VS2N</h4>
+					<div class="content">
+						MODULE D’ANALYSE SYNAPSE
+						<div style="width: 100%;text-align: center;padding-top: 25px;">
+							<video data-autoplay width="80%" src="img/synapseModule.m4v" loop="true"></video>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Modules de VS2N</h4>
+					<div class="content">
+						MODULE D’ANALYSE DES NEURONES
+						<div style="width: 100%;text-align: center;padding-top: 25px;">
+							<video data-autoplay width="80%" src="img/neuronModule.m4v" loop="true"></video>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#425280">
+					<div class="internalTitle">
+						<h2><span style="font-size: 120px;">V</span>S2N: Cas d’utilisation</h2>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Cas d’utilisation 1 : l’effet des 10 000 derniers images de MNIST</h4>
+					<div class="content">
+						En utilisant l’ensemble de données MNIST, une baisse de précision a été observée lors de l’utilisation de réseaux petits ou moyens (avec moins de 1000 neurones). Cependant, il n’apparaît pas dans les grands réseaux.
+						<br><br>
+						<div class="r-hstack">
+							<div style="width: 50%;">
+								<div class="statement fragment" data-fragment-index="0">
+								<div class="title" style="background-color:#425280;">L’objectif</div>
+								<div class="content">
+								À l’aide de VS2N, nous surveillons l’activité du réseau pendant la formation et les 10 derniers kilomètres à l’aide du module d’analyse générale.</div>
+								</div>
+								<br>
+								<div class="statement fragment" data-fragment-index="1">
+								<div class="title" style="background-color:#1aa137;">Configuration</div>
+								<div class="content">
+									<ul>
+										<li>
+										Nengo
+										</li>
+										<li>
+										Un réseau Monocouche (Diehl & Cook 2015)
+										</li>
+										<li>
+										STDP
+										</li>
+									</ul>
+								</div>
+								</div>
+							</div>
+							<div style="width: 50%;text-align: center;">
+								<div class="r-stack">
+									<img class="fragment" data-fragment-index="0" src="img/MNIST.svg" alt="" width="80%" height="100%">
+									<img clas="fragment current-visible" src="img/MNIST_0.svg" alt="" width="80%" height="100%">
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Cas d’utilisation 1 : l’effet des 10 000 derniers images de MNIST</h4>
+					<div class="content" style="text-align: center;">
+						<img src="img/usecase1-2.png" alt="" width="85%">
+						<div style="text-align: start;">
+							<div class="statement fragment">
+							<div class="title" style="background-color:#425280;">Après 50k d’entrée :</div>
+							<div class="content">
+								<ol>
+									<li>Augmentation de l’activité de la synapse de plus de 10 %.</li>
+									<li>Pas de changement clair dans l’activité potentielle des neurones ou des impulsions.</li>
+								</ol>
+						</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Cas d’utilisation 2 : compression du réseau</h4>
+					<div class="content">
+						On fait l’entraînement d’un réseau à une seule couche et appliquons l’opération d’élagage sur les synapses (seuil = 0,2) à la fin de l’entraînement avec la moitié de l’ensemble de données MNIST.<br>
+						<div class="r-hstack" style="text-align: center;">
+						<div style="width: 50%;text-align: start;">
+							<br><br>
+							<div class="statement fragment">
+							<div class="title" style="background-color:#425280;">L’objectif</div>
+							<div class="content">
+							En utilisant VS2N, nous surveillons l’activité générale du réseau une fois élagué et l’effet de l’élagage sur des neurones sélectionnés au hasard.</div>
+							</div>
+							<br>
+							<div class="statement fragment">
+							<div class="title" style="background-color:#1aa137;">Configuration</div>
+							<div class="content">
+								<ul>
+									<li>
+									N2S3
+									</li>
+									<li>
+									Un réseau Monocouche (Diehl & Cook 2015)
+									</li>
+									<li>
+									STDP
+									</li>
+								</ul>
+							</div>
+							</div>
+						</div>
+						<div style="width: 50%;text-align: center;">
+							<img src="img/nn.svg" alt="" width="100%">
+						</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Cas d’utilisation 2 : compression du réseau</h4>
+					<div class="content" style="text-align: center;">
+						<img src="img/usecase2-1.png" alt="" width="85%">
+						<div style="text-align: start;">
+							<div class="statement fragment">
+							<div class="title" style="background-color:#425280;">Après l’élagage :</div>
+							<div class="content">
+								<ol>
+									<li>Il y a eu une légère diminution des impulsions, du potentiel des neurones et de l’activité du poids des synapses.</li>
+									<li>Une période de silence dans l’activité du réseau.</li>
+								</ol>
+						</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Cas d’utilisation 2 : compression du réseau</h4>
+					<div class="content">
+						<div class="r-hstack" style="text-align: center;">
+							<div style="width: 50%;padding-right: 10px;">
+								<img src="img/usecase2-2.png" alt="" width="100%">
+								<div class="statement" style="text-align: start;">
+								<div class="title" style="background-color:#425280;">Avant l’élagage :</div>
+								<div class="content">
+									<ol>
+										<li>La valeur moyenne des poids synaptiques diminue avec le temps.</li>
+										<li>La distribution des poids synaptiques dans le temps est différente.</li>
+									</ol>
+								</div>
+								</div>
+							</div>
+							<div class="fragment" style="width: 50%;">
+								<img src="img/usecase2-3.png" alt="" width="100%">
+								<div class="statement" style="text-align: start;">
+								<div class="title" style="background-color:#425280;">Après l’élagage :</div>
+								<div class="content">
+									<ol>
+										<li>Les poids synaptiques moyens augmentent.</li>
+										<li>Un changement dans la distribution des poids synaptiques.</li>
+									</ol>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>VS2N : prise en charge des réseaux multicouches</h4>
+					<div class="content">
+						<div class="statement">
+						<div class="title" style="background-color:#1aa137;">En ajoutant la prise en charge des réseaux multicouches :</div>
+						<div class="content">
+							<ul>
+								<li>
+									Nous pouvons analyser des réseaux qui utilisent des données complexes.
+								</li>
+								<li>
+									Nous pouvons étendre l’outil pour analyser les réseaux de neurones convolutifs.
+								</li>
+							</ul>
+						</div>
+						</div>
+						<div style="text-align: center;">
+						<img src="img/VS2NMult1.png" alt="" width="80%">
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>VS2N : prise en charge des réseaux multicouches</h4>
+					<div class="content">
+						<div class="r-hstack">
+							<div style="text-align: center;width: 50%;">
+								<img src="img/VS2NMult2.png" alt="" width="80%">
+							</div>
+							<div style="text-align: center;width: 50%;">
+								<img src="img/Freeway.gif" alt="" width="80%">
+							</div>
+						</div>
+						<div class="reference">
+							https://gitlab.univ-lille.fr/bioinsp/VS2N
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#425280">
+					<div class="internalTitle">
+						<h2><span style="font-size: 120px;">C</span>ompression progressif pour SNN</h2>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Compression dans les réseaux de neurones à impulsions</h4>
+					<div class="content">
+						Les impulsions sont le moyen de communication dans les SNN. Ils sont transmis par les synapses, représentant le canal de communication entre les neurones. Le nombre de synapses dans un réseau évolue avec le nombre de neurones, donc avoir un moyen efficace de les utiliser conduit à un réseau plus économe en énergie et diminue le coût de production sur le matériel.
+						<br><br>
+						<div class="statement fragment" style="text-align: start;">
+						<div class="title" style="background-color:#425280;">On peut classifier l’élagage en trois types :</div>
+						<div class="content">
+							<ul>
+								<li><span class="highlight">Élagage des poids :</span> qui concerne la suppression des connexions synapses inutiles dans le réseau en fonction d’un seuil statique.</li>
+								<li><span class="highlight">Élagage des filtres :</span> cela supprime les filtres au lieu des synapses pour réduire le temps de calcul.</li>
+								<li><span class="highlight">Élagage basé sur les neurones :</span> nous exécutons l’opération d’élagage sur les neurones, ce qui a un impact négatif sur le réseau.</li>
+							</ul>
+						</div>
+						</div>
+
+						<div class="statement fragment">
+						<div class="title" style="background-color:#1aa137;">A partir de la littérature, nous pouvons voir que :</div>
+						<div class="content">
+							<ul>
+								<li>Les travaux existants se concentrent sur la manière de traiter les synapses élaguées, quand appliquer l’élagage ou bien sur les critères d’élagage.</li>
+								<li>Le même seuil statique est sélectionné sur la base d’expériences.</li>
+							</ul>
+						</div>
+						</div>
+						<br>
+						<div class="statement fragment">
+						<div class="title" style="background-color:#a11a1a;">L’utilisation d’un seuil dynamique pour l’élagage n’est pas encore explorée dans la littérature (uniquement seuil statique)</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Compression dans les réseaux de neurones à impulsions</h4>
+					<div class="content">
+						<div class="r-hstack">
+							<div style="width: 50%;">
+								<img src="img/SNNTrain1.png" alt="" width="70%">
+							</div>
+							<div style="width: 80%;">
+								<img src="img/SNNTrain.png" alt="" width="100%">
+							</div>
+						</div>
+						<div class="statement fragment" style="text-align: start;">
+						<div class="title" style="background-color:#425280;">On voit sur les deux graphs que :</div>
+						<div class="content">
+							<ul>
+								<li>Les neurones se spécialisent dans la détection précoce d’une classe spécifique lors de l’apprentissage.</li>
+								<li><span class="highlight">Élagage des filtres :</span> cela supprime les filtres au lieu des synapses pour réduire le temps de calcul.</li>
+							</ul>
+						</div>
+						</div>
+						<br>
+						<div class="statement fragment" style="text-align: start;">
+						<div class="title" style="background-color:#1aa137;">Par conséquent, on peut commencer à retirer les synapses à un stade précoce.</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Compression progressif pour SNN</h4>
+					<div class="content">
+						<div class="statement fragment" style="text-align: start;">
+						<div class="title" style="background-color:#425280;">Élagage progressive :</div>
+						<div class="content">
+							<div class="r-hstack">
+								<div style="width: 60%;">
+								    $$ T_{n+1} = T_n + \alpha * (C_{rn} / C_n) \quad n \in \mathbb{N}$$
+								</div>
+								<div style="width: 40%;">
+									$\alpha$ est une constante représentant le seuil initial<br>
+									$C_{rn}$ le nombre de synapses restantes au batch n<br>
+									$C_n$ le nombre total de synapses
+								</div>
+							</div>
+						</div>
+						</div>
+						<br><br>
+						<div class="statement fragment" style="text-align: start;">
+						<div class="title" style="background-color:#425280;">Renforcement dynamique des poids synaptiques :</div>
+						<div class="content">
+							<div class="r-hstack">
+								<div style="width: 60%;">
+								    $$ W_{n+1} = W_n + \beta * T_n, \quad n \in \mathbb{N}, \quad W \in [0,1]$$
+								</div>
+								<div style="width: 40%;">
+									$\beta$ est une constante définie<br>
+									$W_n$ représente le poids actuel<br>
+									$T_n$ représente le seuil actuel
+								</div>
+							</div>
+						</div>
+						</div>
+						<br><br>
+						<div class="statement fragment">
+						<div class="title" style="background-color:#1aa137;">L’objectif du renforcement synaptiques</div>
+						<div class="content">
+							Le maintien de l’activité moyenne des impulsions dans le réseau. Le problème de perte de fréquence d’impulsion peut avoir un effet négatif sur la performance du réseau (en particulier le SNN multicouche).
+						</div>
+						</div>
+					</div>
+				</section>
+				<br>
+				<section class="page">
+					<h4>Compression progressif pour SNN: Sélection des paramètres</h4>
+					<div class="content">
+						<div style="width: 100%;text-align: center;">
+							<img src="img/pareto.png" alt="" width="80%">
+						</div>
+						α = 0.05<br>
+						β = 0.10<br><br>
+						<div class="statement fragment" style="text-align: start;">
+						<div class="title" style="background-color:#1aa137;">
+						Les paramètres sélectionnés peuvent changer en fonction du type de réseau, du jeu de données utilisé et des objectifs choisis
+						</div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="page">
+					<h4>Compression progressif pour SNN</h4>
+					<div class="content">
+						<div class="r-hstack">
+							<div style="width: 50%;text-align: center;">
+								<img src="img/flowchart.png" alt="" width="90%">
+							</div>
+							<div style="width: 50%;text-align: center;">
+								<img src="img/threshold.png" alt="" width="70%">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Compression progressif pour SNN</h4>
+					<div class="content">
+							<div style="width: 100%;text-align: center;">
+								<img src="img/table.png" alt="" width="81%">
+							</div>
+							<br>
+							<div style="width: 100%;text-align: center;">
+								<img src="img/table2.png" alt="" width="80%">
+							</div>
+					</div>
+				</section>
+
+				<!--<section class="page">
+					<h4>Compression progressif pour SNN</h4>
+					<div class="content">
+						Compression pour un réseaux multicouche.
+					</div>
+				</section>
+			-->
+				<section data-background="#425280">
+					<div class="internalTitle">
+						<h2><span style="font-size: 120px;">C</span>onclusion</h2>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4>Conclusion</h4>
+					<div class="content">
+						<ul>
+							<div>
+							<li>
+								Les réseaux de neurones à impulsions permettent une consommation d’énergie ultra-faible.
+							</li>
+							<li>
+								On peut profiter de l’analyse visuelle avec la perception humaine pour mieux représenter de grandes quantités de données.
+							</li>
+							<li>
+								Les simulateurs de SNN fournissent des visualisations non adaptées à l’analyse de réseau.
+							</li>
+							</div>
+							<br>
+							<div class="fragment">
+							<li>
+								Avec VS2N, nous avons un moyen supplémentaire et différent pour analyser le comportement du réseau.
+							</li>
+							<li>
+								Grâce à l’analyse visuelle avec VS2N, nous avons pu détecter un problème au niveau du simulateur utilisé.
+							</li>
+							<li>
+								En prenant en charge CSNN, on peut analyser des jeux de données et des architectures plus complexes.
+							</li>
+							</div>
+							<br>
+							<div class="fragment">
+							<li>
+								L’élagage est une technique de compression capable de réduire la taille du réseau pour une implémentation matérielle plus efficace.
+							</li>
+							<li>
+								L’élagage progressif à seuil dynamique est une technique complémentaire à celles existantes.
+							</li>
+							<li>
+								Le renforcement des poids synaptiques pendant l'élagage est un phénomène qui existe aussi en biologie (synaptotrophins et synaptotoxins <span style="font-size: 24px;color: #425280;font-weight: bold;">[1]</span>).
+							</li>
+							</div>
+						</ul>
+						<div class="reference">
+							[1] Sanes JR, Lichtman JW, "Development of the vertebrate neuromuscular junction". Annual Review of Neuroscience 1999 22:1, 389-442
+						</div>
+					</div>
+					<aside class="notes">
+						Avec la possibilité unique de se déplacer dans le temps pour étudier l’évolution du réseau.
+					</aside>
+				</section>
+
+				<section class="page">
+					<h4>Travaux futurs</h4>
+					<div class="content">
+						<ul>
+							<li>
+								La gestion des données massives pendant l’analyse visuelle
+							</li>
+							<br>
+							<div class="fragment">
+							<li>
+								Les réseaux de neurones convolutifs à impulsions et le matériel neuromorphique
+							</li>
+							</div>
+							<br>
+							<div class="fragment">
+							<li>
+								Les métriques d’évaluation des SNN
+							</li>
+							</div>
+						</ul>
+					</div>
+				</section>
+
+				<section class="page">
+					<div class="content">
+						<h4>Travaux scientifiques</h4>
+						<ul>
+							<li style="padding-bottom: 15px;">
+								H. Elbez, M. K. Benhaoua, P. Devienne and P. Boulet, "Visualization Techniques in SNN Simulators", 3rd International Conference on Multimedia Information Processing, CITIM’2018, Oct <span class="highlight" style="font-weight: bold;">2018</span>.
+							</li>
+							<li style="padding-bottom: 15px;">
+								H. Elbez, M. K. Benhaoua, P. Devienne and P. Boulet, "VS2N : Interactive Dynamic Visualization and Analysis Tool for Spiking Neural Networks", International Conference on Content-Based Multimedia Indexing (CBMI), pp. 1-6, <span class="highlight" style="font-weight: bold;">2021</span>.
+							</li>
+							<li style="padding-bottom: 15px;">
+								H. Elbez, M. K. Benhaoua, P. Devienne and P. Boulet, "Progressive compression and weight reinforcement for spiking neural networks", Concurrency Computat Pract Exper, <span class="highlight" style="font-weight: bold;">2022</span>.
+							</li>
+						</ul>
+						<br><br><br>
+						<h4>Autres contributions</h4>
+						<ul>
+							<li style="padding-bottom: 15px;">
+								VS2N: <span class="highlight">https://gitlab.univ-lille.fr/bioinsp/VS2N</span>
+							</li>
+							<li style="padding-bottom: 15px;">
+								VS2N: Outil d’analyse interactive de réseaux de neurones à impulsions, Workshop INSIS - IA pour les sciences de l’ingénierie, CNRS, juin <span class="highlight" style="font-weight: bold;">2022</span>.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+			<div class="email" style="visibility: hidden;">H. Elbez - hammouda.elbez@univ-lille.fr</div>
+			<div class="context" style="visibility: hidden;">Soutenance de thèse de doctorat en Informatique</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			Reveal.initialize({
+			slideNumber: slide => {
+				return [(Reveal.getSlidePastCount( slide )==0)?" ":Reveal.getSlidePastCount( slide ) + " [ " + (Reveal.getTotalSlides()-1) + " ]"];
+			},
+			//totalTime: 900,
+			controls: false,
+			progress: true,
+			history: true,
+			center: true,
+			transition: "none",
+			hash:true,
+			backgroundTransition: "none",
+			pdfMaxPagesPerSlide: 1,
+			pdfSeparateFragments: false,
+			width: "100%",
+			height:"100%",
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+			dependencies: [{ src: 'plugin/customcontrols/customcontrols.js' }],
+			customcontrols: {
+				slideNumberCSS: 'position: fixed; display: block; top: auto; right: 30px; width: 60px; bottom: 30px; z-index: 31; font-family: Source Sans Pro, sans-serif; font-size:  18px; line-height: 1; padding: 5px; text-align: right; background-color: transparent;color:rgb(146, 146, 146);font-weight: 800;visibility: visible;',
+				controls: []
+			}
+			});
+
+			Reveal.on( 'slidechanged', event => {
+			if (Reveal.getSlidePastCount( event.currentSlide ) != 0){
+				this.document.body.getElementsByClassName("email")[0].style.visibility = "visible";
+				this.document.body.getElementsByClassName("context")[0].style.visibility = "visible";
+			}else{
+				this.document.body.getElementsByClassName("email")[0].style.visibility = "hidden";
+				this.document.body.getElementsByClassName("context")[0].style.visibility = "hidden";
+			}
+
+			if (Reveal.getCurrentSlide().childNodes[1].className == "internalTitle"){
+				this.document.body.getElementsByClassName("progress")[0].style.visibility = "visible";
+				this.document.body.getElementsByClassName("slide-number")[0].style.visibility = "hidden";
+			}else{
+				this.document.body.getElementsByClassName("progress")[0].style.visibility = "hidden";
+				this.document.body.getElementsByClassName("slide-number")[0].style.visibility = "visible";
+			}
+			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+			} );
+		</script>
+
+	</body>
+</html>
+
+<!--
+<div class="statement">
+<div class="title" style="background-color:#425280;">Title</div>
+<div class="content">Some libraries, like MathJax (see #226), get confused by the transforms and display states of slides. Often times, this can be fixed by calling their update or render function from this callback.</div>
+</div>
+
+<div class="statement">
+<div class="title" style="background-color:#a11a1a;">Title</div>
+<div class="content">Some libraries, like MathJax (see #226 display states of slides. Often times, this can be fixed by calling their update or render function from this callback.</div>
+</div>
+
+<div class="statement">
+<div class="title" style="background-color:#1aa137;">Title</div>
+<div class="content">Some libraries, like MathJax (see #226), get confused by the transfor times, this can be fixed by calling their update or render function from this callback.</div>
+</div>
+-->
