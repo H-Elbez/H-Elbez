@@ -22,9 +22,9 @@ You can find in this <a href="https://github.com/Timodz/MyPresentations">reposit
 
 <p style="margin:100px;">
   
-[![Hammouda's GitHub stats](https://github-readme-stats.vercel.app/api?username=Timodz&card_width=400)](https://github.com/anuraghazra/github-readme-stats)
+[![Hammouda's GitHub stats](https://github-readme-stats.vercel.app/api?username=H-Elbez&card_width=400)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Timodz&layout=compact&card_width=400)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=H-Elbez&layout=compact&card_width=400)](https://github.com/anuraghazra/github-readme-stats)
 </p>
 
 <p align='center'>
