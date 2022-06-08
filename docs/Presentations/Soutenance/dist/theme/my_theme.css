@@ -25,9 +25,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading-font-weight: 600;
   --r-heading1-text-shadow: none;
   --r-heading1-size: 2.5em;
-  --r-heading2-size: 1.6em;
-  --r-heading3-size: 1.3em;
-  --r-heading4-size: 1em;
+  --r-heading2-size: 1.8em;
+  --r-heading3-size: 1.4em;
+  --r-heading4-size: 1.2em;
   --r-code-font: monospace;
   --r-link-color: #2a76dd;
   --r-link-color-dark: #1a53a1;
@@ -375,7 +375,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   top: 30px;
   left: 30px;
   position: fixed;
-  font-size:  18px;
+  font-size:  20px;
   color:rgb(126, 126, 126);
 }
 
@@ -383,17 +383,17 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   top: 30px;
   right: 30px;
   position: fixed;
-  font-size:  18px;
+  font-size:  20px;
   color:rgb(126, 126, 126);
 }
 
 .reveal .author {
-  font-size:  24px;
+  font-size:  26px;
   color:rgb(19, 19, 19);
 }
 
 .reveal .date {
-  font-size:  20px;
+  font-size:  24px;
   color:rgb(44, 44, 44);
   font-weight: 100;
 }
@@ -405,18 +405,17 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 .jury {
 text-align: start;
-font-size: 20px;
+font-size: 26px;
 padding-left: 60px;
 }
 
 .front .info {
-height: 38vh;
-padding-top: 106px;
-padding-bottom: 25px;
+padding-top: 170px;
+padding-bottom: 100px;
 }
 
 .jury .title {
-font-size: 22px;
+font-size: 24px;
 font-weight: 600;
 text-decoration: underline;
 }
@@ -436,12 +435,12 @@ text-decoration: underline;
 }
 .content {
   padding-top: 1vh;
-  font-size: 28px;
+  font-size: 32px;
   text-align: justify;
 }
 
 .plan {
-font-size: 36px;
+font-size: 40px;
 text-align: start;
 padding: 35px;
 }
@@ -469,7 +468,7 @@ li {
  * CUSTOM CSS
  *********************************************/
  .reference{
-  font-size: 18px;
+  font-size: 20px;
   position: absolute;
   bottom: 40px;
   width: 100%;
