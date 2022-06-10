@@ -36,17 +36,15 @@
 							Université de Lille, France
 							<div class="name">Pr. Kamel Benhaoua</div>
 							Université de Mascara, Algérie
-							<br><br><br><br>
+							<br><br>
 							<div class="title">Invité</div>
 							<div class="name">Dr. Philippe Devienne</div>
 							CNRS, France
 							</div>
 							<div class="r-vstack" style="align-items: normal;width: 50%;">
-							<div class="title">Président</div>
+							<div class="title">Examinateurs</div>
 							<div class="name">Pr. Sidi Mohammed Benslimane</div>
 							Ecole Supèrieure en Informatique de Sidi Bel Abbès, Algérie
-							<br><br>
-							<div class="title">Examinateurs</div>
 							<div class="name">Dr. Ihsen Alouani</div>
 							Université Polytechnique Hauts-de-France, France
 							<div class="name">Pr. Fatima Debbat</div>
@@ -65,20 +63,6 @@
 					</div>
 				</section>
 
-				<section>
-					<div class="plan">
-							<ol class="plan-titles">
-								<li>Introduction</li>
-								<li>Motivation</li>
-								<li>Analyse Visuelle</li>
-								<li>Étude des techniques de visualisation dans les simulateurs SNN</li>
-								<li>VS2N: Outil de visualisation pour SNN</li>
-								<li>Compression progressif pour réseaux de neurones à impulsions</li>
-								<li>Conclusion</li>
-							</ol>
-					</div>
-				</section>
-
 				<section data-background="#425280">
 					<div class="internalTitle">
 						<h2><span style="font-size: 120px;">I</span>ntroduction</h2>
@@ -86,35 +70,35 @@
 				</section>
 
 				<section class="page">
-					<h4>Réseaux de neurones dans différents domaines</h4>
+					<!-- <h4>Réseaux de neurones dans différents domaines</h4>-->
 					<div class="content" style="text-align: center;">
 						<div class="r-hstack">
 							<img src="img/images.png" alt="", style="width: 45vw;padding: 25px;">
-							<img src="img/medical.jpg" alt="", style="width: 30vw;padding: 25px;">
+							<img src="img/medical.jpg" alt="", style="width: 40vw;padding: 25px;">
 						</div>
-						<img src="img/robotics.gif" alt="", style="width: 35vw;padding: 25px;">
+						<img src="img/robotics.gif" alt="", style="width: 40vw;padding: 25px;">
 					</div>
 				</section>
 
 				<section class="page">
-					<h4>Les réseaux de neurones</h4>
+					<h4><span style="text-transform: capitalize;">L</span>es réseaux de neurones</h4>
 					<div class="content">
 						<div class="r-hstack" style="align-items: normal;">
 							<div style="width: 50vw;padding-right: 25px;">
 								<div class="statement fragment">
-									<div class="title" style="background-color:#1aa137;">Les plus grands critiques des réseaux de neurones</div>
+								<div class="title" style="background-color:#425280;">Plus c’est profond, meilleur sera le résultat</div>
+								<div class="content" style="text-align: center;padding: 0px;">
+									<img src="img/Inception.png" alt="", width="70%">
+								</div>
+								</div>
+								<br>
+								<div class="statement fragment">
+									<div class="title" style="background-color:#a11a1a;">Les plus grandes critiques des réseaux de neurones</div>
 									<div class="content">
 										<ul>
 											<li>l’énorme consommation d’énergie</li>
 											<li>le besoin de beaucoup de données pour être performant</li>
-										</ul>
-									</div>
-									</div>
-								<br>
-								<div class="statement fragment">
-								<div class="title" style="background-color:#425280;">Plus c’est profond, mieux sera le résultat</div>
-								<div class="content" style="text-align: center;padding: 0px;">
-									<img src="img/Inception.png" alt="", width="70%">
+										</ul>	
 								</div>
 								</div>
 							</div>
@@ -147,7 +131,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Réseaux de neurones à impulsions</h4>
+					<h4><span style="text-transform: capitalize;">R</span>éseaux de neurones à impulsions</h4>
 					<div class="content">
 					<div class="r-hstack">
 						<div style="width: 50vw;padding-right: 25px;text-align: center;">
@@ -167,13 +151,13 @@
 				</section>
 
 				<section class="page">
-					<h4>Réseaux de neurones à impulsions</h4>
+					<h4><span style="text-transform: capitalize;">R</span>éseaux de neurones à impulsions</h4>
 					<div class="content">
 						<div style="width: 100vw;text-align: center;">
 							<img src="img/SNN.gif" alt="", width="70%">
 						</div>
 						<div class="statement fragment">
-							<div class="title" style="background-color:#a11a1a;width: 90vw;">Les SNN sont sous-performants en termes de performances par rapport aux réseaux de neurones classiques.</div>
+							<div class="title" style="background-color:#a11a1a;width: 90vw;">Les SNN sont moins efficaces que les réseaux de neurones classiques</div>
 						</div>
 					</div>
 					<aside class="notes">
@@ -199,7 +183,7 @@
 							<div class="title" style="background-color:#425280;">Motivation</div>
 							<div class="content">
 								<ul>
-									<li>Absence de moyen d’analyse pour réseau de neurones à impulsions</li>
+									<li>Absence de moyens d’analyse pour réseau de neurones à impulsions</li>
 									<li>Les questions ouvertes liées aux neurosciences</li>
 								</ul>
 							</div>
@@ -220,9 +204,9 @@
 						<div class="content">
 							<ul>
 								<li>La nature spatio-temporelle des données</li>
-								<li>L’analyse des mégadonnées</li>
+								<li>L’analyse de mégadonnées</li>
 								<li>Amélioration du SNN basée sur l'analyse visuelle</li>
-								<li>Manque d'outils pour l'analyse interne du SNN</li>
+								<li>Outils pour l'analyse interne du SNN</li>
 							</ul>
 						</div>
 						</div>
@@ -254,7 +238,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Analyse Visuelle</h4>
+					<h4><span style="text-transform: capitalize;">A</span>nalyse Visuelle</h4>
 					<div class="content">
 						<div class="r-hstack">
 							<div style="width: 45%;">
@@ -270,7 +254,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Analyse Visuelle</h4>
+					<h4><span style="text-transform: capitalize;">A</span>nalyse Visuelle</h4>
 					<div class="content">
 						<div class="r-vstack">
 							<div style="text-align: center;width: 100%;">
@@ -298,13 +282,14 @@
 				</section>
 
 				<section data-background="#425280">
-					<div class="internalTitle">
+					<div class="internalTitle" style="padding-bottom: 115px;">
+						<h3><span style="font-size: 80px;">C</span>ontribution <span style="font-size: 80px;">1</span> :</h3>
 						<h2><span style="font-size: 120px;">V</span>isualisation dans les simulateurs SNN</h2>
 					</div>
 				</section>
 
 				<section class="page">
-					<h4>Étude des techniques de visualisation dans des simulateurs SNN</h4>
+					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs SNN</h4>
 					<div class="content">
 						<br>
 						<div class="highlight" style="font-weight: 600;">Point de vue technique :</div>
@@ -319,7 +304,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Étude des techniques de visualisation dans des simulateurs SNN</h4>
+					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs SNN</h4>
 					<div class="content">
 						<br>
 						<div class="highlight" style="font-weight: 600;">Aspect visualisation :</div>
@@ -333,7 +318,7 @@
 						</ul>
 						<br><br>
 
-						<ul>
+						<ol>
 							<li><span class="highlight" style="font-weight: 600;">Utilité</span></li>
 							<li><span class="highlight" style="font-weight: 600;">Complétude</span></li>
 							<li><span class="highlight" style="font-weight: 600;">Perceptibilité</span></li>
@@ -341,7 +326,7 @@
 							<li><span class="highlight" style="font-weight: 600;">Intuitivité</span></li>
 							<li><span class="highlight" style="font-weight: 600;">Esthétique</span></li>
 							<li><span class="highlight" style="font-weight: 600;">Interactivité</span></li>
-						</ul>
+						</ol>
 						
 						<div class="reference">
 							[1] C. M. D. S. Freitas, P. R. G. Luzzardi, R. A. Cava, M. Winckler, M. S. Pimenta, and L. P. Nedel, “On Evaluating Information Visualization Techniques,” AVI’02, (New York, NY, USA), pp. 373-374, ACM, 2002.<br>
@@ -364,7 +349,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Étude des techniques de visualisation dans des simulateurs SNN</h4>
+					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs SNN</h4>
 					<div class="content">
 						<br>
 						<div class="highlight" style="font-weight: 600;">Aspect visualisation :</div>
@@ -379,14 +364,14 @@
 				</section>
 
 				<section class="page">
-					<h4>Étude des techniques de visualisation dans des simulateurs SNN</h4>
+					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs SNN</h4>
 					<div class="content">						
 						<br>
 						<div class="statement">
 							<div class="title" style="background-color:#425280;">Conclusion</div>
 							<div class="content">
 								<ul>
-									<li style="padding-bottom: 35px;">La séparation du processus de simulation de celui de visualisation est nécessaire</li>
+									<li style="padding-bottom: 35px;">La séparation du processus de simulation de celui de visualisation est <span style="font-weight: bold;color:red;">nécessaire</span></li>
 									<li style="padding-bottom: 35px;">Les simulateurs fournissent des visualisations pour la surveillance, pas pour l'analyse</li>
 									<li style="padding-bottom: 35px;">Il existe un besoin d’outils dédiés pour analyse visuelle</li>
 								</ul>	
@@ -410,13 +395,14 @@
 				</section>
 
 				<section data-background="#425280">
-					<div class="internalTitle">
+					<div class="internalTitle" style="padding-bottom: 115px;">
+						<h3><span style="font-size: 80px;">C</span>ontribution <span style="font-size: 80px;">2</span> :</h3>
 						<h2><span style="font-size: 120px;">V</span>S2N: Outil de visualisation pour SNN</h2>
 					</div>
 				</section>
 
 				<section class="page">
-					<h4>Outils d’analyse visuelle</h4>
+					<h4><span style="text-transform: capitalize;">O</span>utils d’analyse visuelle</h4>
 					<div class="content">
 						<div class="r-hstack" style="padding-top: 28px;">
 							<div class="r-vstack" style="text-align: left; width: 30vw;">
@@ -452,33 +438,24 @@
 				</section>
 
 				<section class="page">
-					<h4>VS2N (<span style="font-weight: 500;font-size: 32px;"><span style="color: #425280;font-weight: bold;font-size: 40px;">V</span>isualization tool for <span style="color: #425280;font-weight: bold;font-size: 40px;">S</span>piking <span style="color: #425280;font-weight: bold;font-size: 40px;">N</span>eural <span style="color: #425280;font-weight: bold;font-size: 40px;">N</span>etworks</span>)</h4>
+					<h4><span style="text-transform: capitalize;">VS2N</span> (<span style="font-weight: 500;font-size: 32px;"><span style="color: #425280;font-weight: bold;font-size: 40px;">V</span>isualization tool for <span style="color: #425280;font-weight: bold;font-size: 40px;">S</span>piking <span style="color: #425280;font-weight: bold;font-size: 40px;">N</span>eural <span style="color: #425280;font-weight: bold;font-size: 40px;">N</span>etworks</span>)</h4>
 					<div class="content">
 						<br>
-						<div class="r-hstack fragment">
-							<div style="width: 40%;">
+						<div class="r-vstack fragment">
+							<div style="width: 80%;text-align: center;">
+								<img src="img/backend.png" alt="" width="100%">
+							</div>
+							<br>
+							<div style="width: 100%;">
 								<ul>
 									<li>Scalabilité</li>
 									<li>Analyse dynamique</li>
-									<li>Nature modulaire</li>
+									<li>Modularité</li>
 									<li>Indépendance du simulateur</li>
 								</ul>
 							</div>
-							<div style="width: 60%;text-align: center;">
-								<img src="img/backend.png" alt="" width="100%">
-							</div>
 						</div>
-						<div class="fragment">
-						Schéma de base de données
-						<div class="r-hstack" style="width: 100%;">
-							<div style="width: 35%;">
-								<img src="img/schemas.png" alt="">
-							</div>
-							<div style="width: 65%;text-align: center;">
-								<img src="img/schemas2.png" alt="" width="60%">
-							</div>
-						</div>
-						</div>
+						
 					</div>
 					<aside class="notes">
 						VS2N est un outil Web d’analyse visuelle dynamique interactive pour les réseaux de neurones à impulsions.
@@ -486,7 +463,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Modules de VS2N</h4>
+					<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
 					<div class="content">
 						MODULE D’ANALYSE GÉNÉRALE
 						<div style="width: 100%;text-align: center;padding-top: 25px;">
@@ -496,7 +473,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Modules de VS2N</h4>
+					<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
 					<div class="content">
 						MODULE D’ANALYSE SYNAPSE
 						<div style="width: 100%;text-align: center;padding-top: 25px;">
@@ -506,7 +483,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Modules de VS2N</h4>
+					<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
 					<div class="content">
 						MODULE D’ANALYSE DES NEURONES
 						<div style="width: 100%;text-align: center;padding-top: 25px;">
@@ -522,13 +499,13 @@
 				</section>
 
 				<section class="page">
-					<h4>Cas d’utilisation I : l’effet des derniers 10000 de MNIST</h4>
+					<h4><span style="text-transform: capitalize;">I - MNIST</span></h4>
 					<div class="content">
 						<br>
 						En utilisant l’ensemble de données MNIST:<br>
 						<ul>
 							<li>
-								Une baisse de précision lors des derniers 10000 de MNIST
+								Une baisse de précision lors des 10000 derniers images de MNIST
 							</li>
 						</ul>
 						<br><br>
@@ -537,7 +514,7 @@
 								<div class="statement fragment" data-fragment-index="1">
 								<div class="title" style="background-color:#425280;">Objectif</div>
 								<div class="content">
-									Surveillance de l'activité durant les derniers 10000 images
+									Surveillance de l'activité durant les 10000 derniers images
 								</div>
 								</div>
 								<br>
@@ -573,7 +550,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Cas d’utilisation I : l’effet des derniers 10000 de MNIST</h4>
+					<h4><span style="text-transform: capitalize;">I - MNIST</span></h4>
 					<div class="content" style="text-align: center;">
 						<img src="img/usecase1-2.png" alt="" width="90%">
 						<div style="text-align: start;">
@@ -582,7 +559,7 @@
 							<div class="content">
 								<ol>
 									<li>Augmentation de l’activité synaptique</li>
-									<li>Pas de changement dans l'activité potentielle et les impulsions</li>
+									<li>Pas de changement dans l'activité potentielle et des impulsions</li>
 								</ol>
 						</div>
 							</div>
@@ -597,7 +574,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Cas d’utilisation II : compression du réseau</h4>
+					<h4><span style="text-transform: capitalize;">II</span> - la compression</h4>
 					<div class="content">
 						<ul>
 							<li>Application de l’opération d’élagage sur les synapses</li>
@@ -641,7 +618,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Cas d’utilisation II : compression du réseau</h4>
+					<h4><span style="text-transform: capitalize;">II</span> - la compression</h4>
 					<div class="content" style="text-align: center;">
 						<img src="img/usecase2-1.png" alt="" width="90%">
 						<div style="text-align: start;">
@@ -665,7 +642,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Cas d’utilisation II : compression du réseau</h4>
+					<h4><span style="text-transform: capitalize;">II</span> - la compression</h4>
 					<div class="content">
 						<div class="r-hstack" style="text-align: center;">
 							<div style="width: 50%;padding-right: 10px;">
@@ -710,67 +687,19 @@
 					</aside>
 				</section>
 
-				<section class="page">
-					<h4>VS2N : prise en charge des réseaux multicouches</h4>
-					<div class="content">
-						<div class="statement">
-						<div class="title" style="background-color:#1aa137;">Avec le support des réseaux multicouches</div>
-						<div class="content">
-							<ul>
-								<li>
-									Analyse du réseau avec des jeux de données complexes
-								</li>
-								<li>
-									Analyse des réseaux de neurones convolutifs à impulsions
-								</li>
-							</ul>
-						</div>
-						</div>
-						<div style="text-align: center;">
-						<img src="img/VS2NMult1.png" alt="" width="90%">
-						</div>
-					</div>
-					<aside class="notes">
-						<ul>
-							<li>
-								Nous pouvons analyser des réseaux qui utilisent des données complexes.
-							</li>
-							<li>
-								Nous pouvons étendre l’outil pour analyser les réseaux de neurones convolutifs.
-							</li>
-						</ul>
-					</aside>
-				</section>
-
-				<section class="page">
-					<h4>VS2N : prise en charge des réseaux multicouches</h4>
-					<div class="content">
-						<div class="r-hstack">
-							<div style="text-align: center;width: 50%;">
-								<img src="img/VS2NMult2.png" alt="" width="80%">
-							</div>
-							<div style="text-align: center;width: 50%;">
-								<img src="img/Freeway.gif" alt="" width="80%">
-							</div>
-						</div>
-						<div class="reference">
-							https://gitlab.univ-lille.fr/bioinsp/VS2N
-						</div>
-					</div>
-				</section>
-
 				<section data-background="#425280">
-					<div class="internalTitle">
+					<div class="internalTitle" style="padding-bottom: 115px;">
+						<h3><span style="font-size: 80px;">C</span>ontribution <span style="font-size: 80px;">3</span> :</h3>
 						<h2><span style="font-size: 120px;">C</span>ompression progressif pour SNN</h2>
 					</div>
 				</section>
 
 				<section class="page">
-					<h4>Compression dans les réseaux de neurones à impulsions</h4>
+					<h4><span style="text-transform: capitalize;">C</span>ompression dans les réseaux de neurones à impulsions</h4>
 					<div class="content">
 						<ul>
-							<li style="padding-bottom: 25px;">Les synapses dans un réseau évolue avec le nombre de neurones</li>
-							<li>La réduction des synapses génère des économies d'énergie</li>
+							<li style="padding-bottom: 25px;">Les synapses dans un réseau évoluent avec le nombre de neurones</li>
+							<li>La réduction des synapses génère un réseau plus petit</li>
 						</ul>
 						<br><br>
 						<div class="statement fragment" style="text-align: start;">
@@ -810,7 +739,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Compression dans les réseaux de neurones à impulsions</h4>
+					<h4><span style="text-transform: capitalize;">C</span>ompression dans les réseaux de neurones à impulsions</h4>
 					<div class="content">
 						<div class="r-hstack">
 							<div style="width: 30%;">
@@ -833,7 +762,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Compression progressif pour SNN</h4>
+					<h4><span style="text-transform: capitalize;">C</span>ompression progressif pour <span style="text-transform: capitalize;">SNN</span></h4>
 					<div class="content">
 						<div class="statement fragment" style="text-align: start;">
 						<div class="title" style="background-color:#425280;">Élagage progressive</div>
@@ -885,7 +814,7 @@
 				</section>
 				<br>
 				<section class="page">
-					<h4>Compression progressif pour SNN: Sélection des paramètres</h4>
+					<h4><span style="text-transform: capitalize;">S</span>élection des paramètres</h4>
 					<div class="content">
 						<br>
 						<div style="width: 100%;text-align: center;">
@@ -900,7 +829,7 @@
 				</section>
 				
 				<section class="page">
-					<h4>Compression progressif pour SNN</h4>
+					<h4><span style="text-transform: capitalize;">C</span>ompression progressif pour <span style="text-transform: capitalize;">SNN</span>s</h4>
 					<div class="content">
 						<div class="r-hstack">
 							<div style="width: 50%;text-align: center;">
@@ -914,7 +843,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Compression progressif pour SNN</h4>
+					<h4><span style="text-transform: capitalize;">C</span>ompression progressif pour <span style="text-transform: capitalize;">SNN</span></h4>
 					<div class="content">
 							<div style="width: 100%;text-align: center;">
 								<img src="img/table.png" alt="" width="81%">
@@ -940,7 +869,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Conclusion</h4>
+					<h4><span style="text-transform: capitalize;">C</span>onclusion</h4>
 					<div class="content">
 						<ul>
 							<div>
@@ -1010,7 +939,7 @@
 				</section>
 
 				<section class="page">
-					<h4>Travaux futurs</h4>
+					<h4><span style="text-transform: capitalize;">T</span>ravaux futurs</h4>
 					<div class="content">
 						<ul>
 							<li>
@@ -1034,20 +963,22 @@
 
 				<section class="page">
 					<div class="content">
-						<h4>Travaux scientifiques</h4>
+						<h4><span style="text-transform: capitalize;">T</span>ravaux scientifiques</h4>
 						<ul>
+							<span style="font-weight: bold;">Conférences:</span>
 							<li style="padding-bottom: 15px;">
 								H. Elbez, M. K. Benhaoua, P. Devienne and P. Boulet, "Visualization Techniques in SNN Simulators", 3rd International Conference on Multimedia Information Processing, CITIM’2018, Oct <span class="highlight" style="font-weight: bold;">2018</span>.
 							</li>
 							<li style="padding-bottom: 15px;">
 								H. Elbez, M. K. Benhaoua, P. Devienne and P. Boulet, "VS2N : Interactive Dynamic Visualization and Analysis Tool for Spiking Neural Networks", International Conference on Content-Based Multimedia Indexing (CBMI), pp. 1-6, <span class="highlight" style="font-weight: bold;">2021</span>.
 							</li>
+							<span style="font-weight: bold;">Journal:</span>
 							<li style="padding-bottom: 15px;">
 								H. Elbez, M. K. Benhaoua, P. Devienne and P. Boulet, "Progressive compression and weight reinforcement for spiking neural networks", Concurrency Computat Pract Exper, <span class="highlight" style="font-weight: bold;">2022</span>.
 							</li>
 						</ul>
 						<br><br><br>
-						<h4>Autres contributions</h4>
+						<h4><span style="text-transform: capitalize;">A</span>utres contributions</h4>
 						<ul>
 							<li style="padding-bottom: 15px;">
 								VS2N: <span class="highlight">https://gitlab.univ-lille.fr/bioinsp/VS2N</span>
@@ -1069,6 +1000,7 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/math/math.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
 		<script>
 			Reveal.initialize({
 			slideNumber: slide => {
@@ -1080,13 +1012,14 @@
 			history: true,
 			center: true,
 			transition: "none",
+			zoomLevel: 2,
 			hash:true,
 			backgroundTransition: "none",
 			pdfMaxPagesPerSlide: 1,
 			pdfSeparateFragments: false,
 			width: "100%",
 			height:"100%",
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealZoom],
 			dependencies: [{ src: 'plugin/customcontrols/customcontrols.js' }],
 			customcontrols: {
 				slideNumberCSS: 'position: fixed; display: block; top: auto; right: 30px; width: 80px; bottom: 30px; z-index: 31; font-family: Source Sans Pro, sans-serif; font-size:  20px; line-height: 1; padding: 5px; text-align: right; background-color: transparent;color:rgb(146, 146, 146);font-weight: 800;visibility: visible;',

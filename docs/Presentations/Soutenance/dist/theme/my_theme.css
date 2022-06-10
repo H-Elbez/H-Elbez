@@ -431,7 +431,7 @@ text-decoration: underline;
 }
 
 .page h4 {
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 .content {
   padding-top: 1vh;
