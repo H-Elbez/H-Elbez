@@ -83,95 +83,12 @@
 				<section class="page">
 					<h4><span style="text-transform: capitalize;">L</span>es réseaux de neurones</h4>
 					<div class="content">
-						<div class="r-hstack" style="align-items: normal;">
-							<div style="width: 50vw;padding-right: 25px;">
-								<div class="statement fragment">
-								<div class="title" style="background-color:#425280;">Plus c’est profond, meilleur sera le résultat</div>
-								<div class="content" style="text-align: center;padding: 0px;">
-									<img src="img/Inception.png" alt="", width="70%">
-								</div>
-								</div>
-								<br>
-								<div class="statement fragment">
-									<div class="title" style="background-color:#a11a1a;">Les plus grandes critiques des réseaux de neurones</div>
-									<div class="content">
-										<ul>
-											<li>l’énorme consommation d’énergie</li>
-											<li>le besoin de beaucoup de données pour être performant</li>
-										</ul>	
-								</div>
-								</div>
-							</div>
-							<div style="width: 50vw;padding-left: 25px;text-align: center;">
-								<img src="img/CNN.gif" alt="", width="85%">
-							</div>
-							</div>
-							<br>
-							<div class="r-hstack fragment" style="align-items: normal;">
-								<div style="width: 50vw;padding-right: 25px;">
-								<div class="statement">
-								<div class="title" style="background-color:#a11a1a;">Le besoin de puissance de calcul supplémentaire</div>
-								<div class="content">
-									<ul>
-										<li>La limite de l’architecture de Von Neumann</li>
-										<li>La fin de la loi de Moore</li>
-									</ul>
-								</div>
-								</div>
-								</div>
-								<div style="width: 50vw;padding-left: 25px;text-align: center;">
-									<!--<img src="img/hyperparameters.png" alt="", width="100%">-->
-									<table>
-										<thead><tr>
-											<th>Modéle</th>
-											<th>Nombre de couches</th>
-											<th>Paramétres</th>
-											<th>Paramétres entraînables</th>
-										</tr></thead>
-										<tbody><tr>
-											<td>VGG16</td>
-											<td>16</td>
-											<td>138M</td>
-											<td>14.7M</td>
-										</tr>
-										<tr>
-											<td>VGG19</td>
-											<td>19</td>
-											<td>144M</td>
-											<td>20M</td>
-										</tr>
-										<tr>
-											<td>ResNet50</td>
-											<td>50</td>
-											<td>25.6M</td>
-											<td>25.5M</td>
-										</tr>
-										<tr>
-											<td>ResNet152</td>
-											<td>152</td>
-											<td>60.4M</td>
-											<td>60.2M</td>
-										</tr>
-										<tr>
-											<td>MobileNetV2</td>
-											<td>53</td>
-											<td>2.25M</td>
-											<td>2.22M</td>
-										</tr>
-										<tr>
-											<td>GPT-3</td>
-											<td>96</td>
-											<td>175B</td>
-											<td>--</td>
-										</tr>
-									</tbody>
-									</table>
-								</div>
-							</div>
+						<div style="text-align: center;padding-top: 40px;width: 100%;"><img src="img/neuron_and_neuron.svg" width="80%"></div>
+						<div class="fragment" style="text-align: center;padding-top: 20px;width: 100%;">
+							<img src="img/Conv.svg" width="80%"></div>
 					</div>
 					<aside class="notes">
-						Les réseaux de neurones sont très performants dans différentes tâches. Cependant, ils souffrent de l’effet de boîte noire.
-
+						"Les réseaux de neurones artificiels (ANN), généralement appelés réseaux de neurones (NN), sont des systèmes informatiques inspirés des réseaux de neurones biologiques."
 					</aside>
 				</section>
 
@@ -179,85 +96,68 @@
 					<h4><span style="text-transform: capitalize;">L</span>es réseaux de neurones</h4>
 					<div class="content">
 						<div class="r-hstack" style="align-items: normal;">
-							<div style="width: 50vw;padding-right: 25px;">
-								<div class="statement fragment">
-								<div class="title" style="background-color:#425280;">Plus c’est profond, meilleur sera le résultat</div>
-								<div class="content" style="text-align: center;padding: 0px;">
-									<img src="img/Inception.png" alt="", width="70%">
-								</div>
-								</div>
+							<div style="width: 100vw;text-align: center;">
+								<p style="text-align: start;">Plus c’est profond, meilleur sera le résultat</p>
+								<img src="img/Inception.svg" alt="", width="90%">
 								<br>
+							</div>
+							
+							</div>
+							<br>
+							<div class="r-hstack" style="align-items: normal;">
+								<div style="width: 60vw;">
 								<div class="statement fragment">
-									<div class="title" style="background-color:#a11a1a;">Les plus grandes critiques des réseaux de neurones</div>
+									<div class="title" style="background-color:#a11a1a;">Les grandes critiques des réseaux de neurones</div>
 									<div class="content">
 										<ul>
 											<li>l’énorme consommation d’énergie</li>
 											<li>le besoin de beaucoup de données pour être performant</li>
-										</ul>	
-								</div>
-								</div>
-							</div>
-							<div style="width: 50vw;padding-left: 25px;text-align: center;">
-								<img src="img/CNN.gif" alt="", width="85%">
-							</div>
-							</div>
-							<br>
-							<div class="r-hstack fragment" style="align-items: normal;">
-								<div style="width: 50vw;padding-right: 25px;">
-								<div class="statement">
-								<div class="title" style="background-color:#a11a1a;">Le besoin de puissance de calcul supplémentaire</div>
-								<div class="content">
-									<ul>
-										<li>La limite de l’architecture de Von Neumann</li>
-										<li>La fin de la loi de Moore</li>
-									</ul>
+											<li>Le besoin de puissance de calcul supplémentaire:
+												<ul>
+													<li style="color: #a11a1a;">La limite de l’architecture de Von Neumann</li>
+													<li style="color: #a11a1a;">La fin de la loi de Moore</li>
+												</ul>
+											</li>
+										</ul>
 								</div>
 								</div>
 								</div>
-								<div style="width: 50vw;padding-left: 25px;text-align: center;">
-									<!--<img src="img/hyperparameters.png" alt="", width="100%">-->
+								<div style="width: 40vw;text-align: center;">
 									<table>
 										<thead><tr>
 											<th>Modéle</th>
-											<th>Nombre de couches</th>
+											<th># de couches</th>
 											<th>Paramétres</th>
-											<th>Paramétres entraînables</th>
 										</tr></thead>
 										<tbody><tr>
 											<td>VGG16</td>
 											<td>16</td>
 											<td>138M</td>
-											<td>14.7M</td>
 										</tr>
 										<tr>
 											<td>VGG19</td>
 											<td>19</td>
 											<td>144M</td>
-											<td>20M</td>
 										</tr>
 										<tr>
 											<td>ResNet50</td>
 											<td>50</td>
 											<td>25.6M</td>
-											<td>25.5M</td>
 										</tr>
 										<tr>
 											<td>ResNet152</td>
 											<td>152</td>
 											<td>60.4M</td>
-											<td>60.2M</td>
 										</tr>
 										<tr>
 											<td>MobileNetV2</td>
 											<td>53</td>
 											<td>2.25M</td>
-											<td>2.22M</td>
 										</tr>
 										<tr>
 											<td>GPT-3</td>
 											<td>96</td>
 											<td>175B</td>
-											<td>--</td>
 										</tr>
 									</tbody>
 									</table>
@@ -273,11 +173,16 @@
 					<h4><span style="text-transform: capitalize;">R</span>éseaux de neurones à impulsions</h4>
 					<div class="content">
 					<div class="r-hstack">
-						<div style="width: 50vw;padding-right: 25px;text-align: center;">
-							<img src="img/neuro.jpg" alt="">
+						<div style="width: 70vw;text-align: center;">
+							<img src="img/CNN-SNN.svg" alt="">
 						</div>
-						<div style="width: 50vw;padding-right: 25px;text-align: center;">
-							<img src="img/energy.png" alt="">
+						<div class="fragment" style="width: 50vw;text-align: center;">
+							<img src="img/energy.png" alt="" style="width: 60%;">
+						</div>
+					</div>
+					<div class="r-hstack fragment">
+						<div style="width: 100vw;text-align: center;">
+							<img src="img/neuromorph.svg" alt="" style="width: 55%;">
 						</div>
 					</div>
 					<div class="reference">
@@ -434,7 +339,92 @@
 						<div class="highlight" style="font-weight: 600;">Point de vue technique :</div>
 						<br>
 						<div style="text-align: center;">
-						<img src="img/VisSimSNN1.png" alt="" width="80%">
+						<!--<img src="img/VisSimSNN1.png" alt="" width="80%">-->
+						<table>
+							<thead><tr>
+								<th></th>
+								<th>La technologie</th>
+								<th>Type de simulation</th>
+								<th>Parallélisme</th>
+								<th>support grande échelle</th>
+								<th>GUI</th>
+								<th>CMD</th>
+							</tr></thead>
+							<tbody><tr>
+								<td>NEURON</td>
+								<td>C, C++, Python</td>
+								<td>Event-driven</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+							<tr>
+								<td>Brian</td>
+								<td>Python, NeuroML, PyNN</td>
+								<td>Clock-driven</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+							<tr>
+								<td>Nengo</td>
+								<td>Python, Numpy, HTML</td>
+								<td>Clock-driven</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+							<tr>
+								<td>Neuronify</td>
+								<td>C++, Qt</td>
+								<td>Clock-driven</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+							</tr>
+							<tr>
+								<td>Simbrain</td>
+								<td>Java</td>
+								<td>Clock-driven</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+							</tr>
+							<tr>
+								<td>N2S3</td>
+								<td>Scala, Akka</td>
+								<td>Event-driven</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+							<tr>
+								<td>NEST</td>
+								<td>C++, Python, SLI</td>
+								<td>Event-driven & Clock-driven</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+							<tr>
+								<td>À base de Pytorch</td>
+								<td>Python</td>
+								<td>Clock-driven</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+						
+						</tbody>
+						</table>
 						</div>
 					</div>
 					<aside class="notes">
@@ -493,8 +483,103 @@
 						<br>
 						<div class="highlight" style="font-weight: 600;">Aspect visualisation :</div>
 						<br>
-						<div style="text-align: center;">
-						<img src="img/VisSimSNN2.png" alt="" width="80%">
+						<div style="text-align: center;width: 100%;">
+						<!--<img src="img/VisSimSNN2.png" alt="" width="80%">-->
+						<table>
+							<thead><tr>
+								<th></th>
+								<th>Utilité</th>
+								<th>Complétude</th>
+								<th>Perceptibilité</th>
+								<th>Véracité</th>
+								<th>Intuitivité</th>
+								<th>Esthétique</th>
+								<th>Interactivité</th>
+							</tr></thead>
+							<tbody><tr>
+								<td>NEURON</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+							<tr>
+								<td>Brian</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+							<tr>
+								<td>Nengo</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+							</tr>
+							<tr>
+								<td>Neuronify</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+							</tr>
+							<tr>
+								<td>Simbrain</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+							<tr>
+								<td>N2S3</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+							</tr>
+							<tr>
+								<td>NEST</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">-</td>
+							</tr>
+							<tr>
+								<td>À base de Pytorch</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">++</td>
+								<td style="font-weight: bold;">+</td>
+								<td style="font-weight: bold;">+</td>
+							</tr>
+						
+						</tbody>
+						</table>
+						<span style="text-align: start;font-size: 26px;padding-top: 15px;">Bien: <span style="font-weight: bold;"> ++</span> | Moyen: <span style="font-weight: bold;">+</span> | Mal: <span style="font-weight: bold;">-</span></span>
 						</div>
 					</div>
 					<aside class="notes">
@@ -601,39 +686,39 @@
 					</aside>
 				</section>
 
-				<section class="page">
-					<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
-					<div class="content">
-						MODULE D’ANALYSE GÉNÉRALE
-						<div style="width: 100%;text-align: center;padding-top: 25px;">
-							<video data-autoplay width="80%" src="img/generalModule.m4v" loop="true"></video>
+				<section>
+					<section data-background-iframe="http://0.0.0.0:8050/home" data-background-interactive>
+					</section>
+					<section class="page">
+						<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
+						<div class="content">
+							MODULE D’ANALYSE GÉNÉRALE
+							<div style="width: 100%;text-align: center;padding-top: 25px;">
+								<video data-autoplay width="80%" src="img/generalModule.m4v" loop="true"></video>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
 
-				<section class="page">
-					<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
-					<div class="content">
-						MODULE D’ANALYSE SYNAPSE
-						<div style="width: 100%;text-align: center;padding-top: 25px;">
-							<video data-autoplay width="80%" src="img/synapseModule.m4v" loop="true"></video>
+					<section class="page">
+						<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
+						<div class="content">
+							MODULE D’ANALYSE SYNAPSE
+							<div style="width: 100%;text-align: center;padding-top: 25px;">
+								<video data-autoplay width="80%" src="img/synapseModule.m4v" loop="true"></video>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
 
-				<section class="page">
-					<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
-					<div class="content">
-						MODULE D’ANALYSE DES NEURONES
-						<div style="width: 100%;text-align: center;padding-top: 25px;">
-							<video data-autoplay width="80%" src="img/neuronModule.m4v" loop="true"></video>
+					<section class="page">
+						<h4><span style="text-transform: capitalize;">M</span>odules de <span style="text-transform: capitalize;">VS2N</span></h4>
+						<div class="content">
+							MODULE D’ANALYSE DES NEURONES
+							<div style="width: 100%;text-align: center;padding-top: 25px;">
+								<video data-autoplay width="80%" src="img/neuronModule.m4v" loop="true"></video>
+							</div>
 						</div>
-					</div>
-				</section>
-				
-				<section data-background-iframe="http://0.0.0.0:8050/home" data-background-interactive>
-				</section>
-				
+					</section>
+				</section>			
 
 				<section data-background="#425280">
 					<div class="internalTitle">
@@ -961,7 +1046,7 @@
 					<div class="content">
 						<br>
 						<div style="width: 100%;text-align: center;">
-							<img src="img/pareto.png" alt="" width="90%">
+							<img src="img/pareto.svg" alt="" width="90%">
 						</div>
 						α = 0.05<br>
 						β = 0.10
@@ -972,14 +1057,14 @@
 				</section>
 				
 				<section class="page">
-					<h4><span style="text-transform: capitalize;">C</span>ompression progressif pour <span style="text-transform: capitalize;">SNN</span>s</h4>
+					<h4><span style="text-transform: capitalize;">C</span>ompression progressif pour <span style="text-transform: capitalize;">SNN</span></h4>
 					<div class="content">
 						<div class="r-hstack">
-							<div style="width: 50%;text-align: center;">
-								<img src="img/flowchart.png" alt="" width="90%">
+							<div style="height: 90vh;text-align: center;width: 60%;">
+								<img src="img/Flowchart.svg" alt="" width="100%">
 							</div>
-							<div style="width: 50%;text-align: center;">
-								<img src="img/threshold.png" alt="" width="70%">
+							<div style="height: 90vh;text-align: center;width: 50%;">
+								<img src="img/threshold.svg" alt="" width="100%">
 							</div>
 						</div>
 					</div>
@@ -989,12 +1074,31 @@
 					<h4><span style="text-transform: capitalize;">C</span>ompression progressif pour <span style="text-transform: capitalize;">SNN</span></h4>
 					<div class="content">
 							<div style="width: 100%;text-align: center;">
-								<img src="img/table.png" alt="" width="81%">
+								<div class="r-hstack">
+									<div style="height: 90vh;text-align: center;width: 50%;">
+										<img src="img/Reconnaissance.svg" alt="" width="100%">
+									</div>
+									<div class="fragment" style="height: 90vh;text-align: center;width: 50%;">
+										<img src="img/Compression.svg" alt="" width="100%">
+									</div>
+								</div>
 							</div>
 							<br>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4><span style="text-transform: capitalize;">C</span>ompression progressif pour <span style="text-transform: capitalize;">SNN</span></h4>
+					<div class="content">
+						L'effet du nombre de période d'entraînement sur les grands réseaux
 							<div style="width: 100%;text-align: center;">
-								<img src="img/table2.png" alt="" width="80%">
+								<div class="r-hstack">
+									<div style="height: 90vh;text-align: center;width: 60%;">
+										<img src="img/Compression1600.svg" alt="" width="100%">
+									</div>
+								</div>
 							</div>
+							<br>
 					</div>
 				</section>
 
@@ -1046,6 +1150,9 @@
 							<li>
 								L’élagage à seuil dynamique est une technique complémentaire
 							</li>
+							<li>
+								Le moment d'application de l'élagage dépend de la taille et type du réseau. 
+							</li>
 							</div>
 						</ul>
 					</div>
@@ -1077,6 +1184,9 @@
 							<li>
 								L’élagage progressif à seuil dynamique est une technique complémentaire à celles existantes.
 							</li>
+							<li>
+								Le moment d'application de l'élagage dépend de la taille et type du réseau. 
+							</li>
 						</ul>
 					</aside>
 				</section>
@@ -1084,23 +1194,40 @@
 				<section class="page">
 					<h4><span style="text-transform: capitalize;">T</span>ravaux futurs</h4>
 					<div class="content">
-						<ul>
-							<li>
-								Gestion des données massives pendant l’analyse
-							</li>
-							<br>
-							<div class="fragment">
-							<li>
-								Les réseaux de neurones convolutifs à impulsions et le matériel neuromorphique
-							</li>
-							</div>
-							<br>
-							<div class="fragment">
-							<li>
-								Les métriques d’évaluation des SNN
-							</li>
-							</div>
-						</ul>
+						Gestion des données massives pendant l’analyse
+						<div style="text-align: center;">
+							<img src="">
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4><span style="text-transform: capitalize;">T</span>ravaux futurs</h4>
+					<div class="content">
+						Analyse de réseaux de neurones multicouche à impulsions
+						<div style="text-align: center;">
+							<img src="img/VS2NMult1.png">
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4><span style="text-transform: capitalize;">T</span>ravaux futurs</h4>
+					<div class="content">
+						Compression pour les réseaux de neurones multicouche à impulsions
+						<div style="text-align: center;">
+							<img src="">
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<h4><span style="text-transform: capitalize;">T</span>ravaux futurs</h4>
+					<div class="content">
+						Les métriques d’évaluation des SNN<br><br>
+						<div style="text-align: center;">
+							<img src="img/AccuracyVSefficiency.jpg">
+						</div>
 					</div>
 				</section>
 

@@ -492,3 +492,15 @@ padding-top: 10px;
 .highlight {
   color: #425280;
 }
+
+.tableWithBorders th {
+  border:1px solid black;
+}
+
+.tableWithBorders td {
+  border:1px solid black;
+}
+
+.tableWithBorders {
+  border:1px solid black;
+}
