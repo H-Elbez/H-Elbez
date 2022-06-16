@@ -282,10 +282,21 @@
 				</section>
 
 				<section class="page">
-					<h4><span style="text-transform: capitalize;">A</span>nalyse Visuelle</h4>
+					<h4><span style="text-transform: capitalize;">R</span>eprésentation visuelle des donneés</h4>
 					<div class="content">
-						Visual analysis
+						<div style="width: 100%;text-align: center;">
+							<img src="img/Playfair.png" alt="" width="60%">
+						</div>
+						<div class="reference">
+							https://fr.wikipedia.org/wiki/William_Playfair
+						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>La représentation visuelle facilite l'analyse des données par rapport à l'utilisation de tableaux</li>
+							<li>en raison des caractéristiques de la perception humaine où l'on peut facilement comparer entre les différents éléments</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section class="page">
@@ -309,15 +320,15 @@
 					<div class="content">
 						<div class="r-vstack">
 							<div style="text-align: center;width: 100%;">
-							<img src="img/Deconv.png" alt="" width="90%">
+							<img src="img/Deconv.png" alt="" width="100%">
 							</div>
 							<br>
 							<div class="r-hstack">
 							<div class="fragment" style="text-align: left;width: 55%;">
-								<img src="img/NNCars.jpeg" alt="" width="90%">
+								<img src="img/NNCars.jpeg" alt="" width="100%">
 							</div>
 							<div class="fragment" style="text-align: center;width: 45%;">
-								<img src="img/bicycle.JPG" alt="" width="75%">
+								<img src="img/bicycle.JPG" alt="" width="90%">
 							</div>
 							</div>
 						</div>
@@ -340,7 +351,7 @@
 				</section>
 
 				<section class="page">
-					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs SNN</h4>
+					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs <span style="text-transform: capitalize;">SNN</span></h4>
 					<div class="content">
 						<br>
 						<div class="highlight" style="font-weight: 600;">Point de vue technique :</div>
@@ -349,85 +360,85 @@
 						<!--<img src="img/VisSimSNN1.png" alt="" width="80%">-->
 						<table>
 							<thead><tr>
-								<th></th>
+								<th>Simulateur</th>
 								<th>La technologie</th>
-								<th>Type de simulation</th>
-								<th>Parallélisme</th>
-								<th>support grande échelle</th>
-								<th>GUI</th>
-								<th>CMD</th>
+								<th class="fragment" data-fragment-index="1">Type de simulation</th>
+								<th class="fragment" data-fragment-index="2">Parallélisme</th>
+								<th class="fragment" data-fragment-index="3">Scalabilité</th>
+								<th class="fragment" data-fragment-index="4">Interface graphique</th>
+								<th class="fragment" data-fragment-index="5">CMD</th>
 							</tr></thead>
 							<tbody><tr>
 								<td>NEURON</td>
-								<td>C, C++, Python</td>
-								<td>Event-driven</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">+</td>
+								<td>C, C++, <span class="fragment highlight-red" data-fragment-index="0">Python</span></td>
+								<td class="fragment" data-fragment-index="1">Event-driven</td>
+								<td class="fragment" data-fragment-index="2" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="3" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="4" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="5" style="font-weight: bold;">+</td>
 							</tr>
 							<tr>
 								<td>Brian</td>
-								<td>Python, NeuroML, PyNN</td>
-								<td>Clock-driven</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">+</td>
+								<td><span class="fragment highlight-red" data-fragment-index="0">Python</span>, NeuroML, PyNN</td>
+								<td class="fragment" data-fragment-index="1">Clock-driven</td>
+								<td class="fragment" data-fragment-index="2" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="3" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="4" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="5" style="font-weight: bold;">+</td>
 							</tr>
 							<tr>
 								<td>Nengo</td>
-								<td>Python, Numpy, HTML</td>
-								<td>Clock-driven</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">+</td>
+								<td><span class="fragment highlight-red" data-fragment-index="0">Python</span>, Numpy, HTML</td>
+								<td class="fragment" data-fragment-index="1">Clock-driven</td>
+								<td class="fragment" data-fragment-index="2" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="3" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="4" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="5" style="font-weight: bold;">+</td>
 							</tr>
 							<tr>
 								<td>Neuronify</td>
 								<td>C++, Qt</td>
-								<td>Clock-driven</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="1">Clock-driven</td>
+								<td class="fragment" data-fragment-index="2" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="3" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="4" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="5" style="font-weight: bold;">-</td>
 							</tr>
 							<tr>
 								<td>Simbrain</td>
 								<td>Java</td>
-								<td>Clock-driven</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="1">Clock-driven</td>
+								<td class="fragment" data-fragment-index="2" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="3" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="4" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="5" style="font-weight: bold;">-</td>
 							</tr>
 							<tr>
 								<td>N2S3</td>
 								<td>Scala, Akka</td>
-								<td>Event-driven</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="1">Event-driven</td>
+								<td class="fragment" data-fragment-index="2" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="3" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="4" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="5" style="font-weight: bold;">+</td>
 							</tr>
 							<tr>
 								<td>NEST</td>
-								<td>C++, Python, SLI</td>
-								<td>Event-driven & Clock-driven</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">+</td>
+								<td>C++, <span class="fragment highlight-red" data-fragment-index="0">Python</span>, SLI</td>
+								<td class="fragment" data-fragment-index="1">Event-driven & Clock-driven</td>
+								<td class="fragment" data-fragment-index="2" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="3" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="4" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="5" style="font-weight: bold;">+</td>
 							</tr>
 							<tr>
 								<td>À base de Pytorch</td>
-								<td>Python</td>
-								<td>Clock-driven</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">+</td>
-								<td style="font-weight: bold;">-</td>
-								<td style="font-weight: bold;">+</td>
+								<td><span class="fragment highlight-red" data-fragment-index="0">Python</span></td>
+								<td class="fragment" data-fragment-index="1">Clock-driven</td>
+								<td class="fragment" data-fragment-index="2" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="3" style="font-weight: bold;">+</td>
+								<td class="fragment" data-fragment-index="4" style="font-weight: bold;">-</td>
+								<td class="fragment" data-fragment-index="5" style="font-weight: bold;">+</td>
 							</tr>
 						
 						</tbody>
@@ -435,12 +446,16 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Une comparaison des techniques de visualisation proposées par les simulateurs SNN à des fins d’analyse.
+						De point de vue technique:
+						<ul>
+							<li>Differente technologies sont utilisées</li>
+							<li>Les deux grandes types de simulation qui existent</li>
+						</ul>
 					</aside>
 				</section>
 
 				<section class="page">
-					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs SNN</h4>
+					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs <span style="text-transform: capitalize;">SNN</span></h4>
 					<div class="content">
 						<br>
 						<div class="highlight" style="font-weight: 600;">Aspect visualisation :</div>
@@ -448,13 +463,13 @@
 							<li>
 								Sept critères de comparaison
 							</li>
-							<li>
+							<li class="fragment">
 								Freitas et al. <span style="font-size: 24px;color: #425280;font-weight: bold;">[1]</span>, et Stephen Few <span style="font-size: 24px;color: #425280;font-weight: bold;">[2]</span> + Niveau d’interactivité
 							</li>
 						</ul>
 						<br><br>
 
-						<ol>
+						<ol class="fragment">
 							<li><span class="highlight" style="font-weight: 600;">Utilité</span></li>
 							<li><span class="highlight" style="font-weight: 600;">Complétude</span></li>
 							<li><span class="highlight" style="font-weight: 600;">Perceptibilité</span></li>
@@ -470,8 +485,6 @@
 						</div>
 					</div>
 					<aside class="notes">
-						Une comparaison des techniques de visualisation proposées par les simulateurs SNN à des fins d’analyse.
-
 						<ul>
 							<li><span class="highlight" style="font-weight: 600;">Utilité :</span> la visualisation fournit-elle des informations significatives ou non ?</li>
 							<li><span class="highlight" style="font-weight: 600;">Complétude :</span> la visualisation comprend tous les composants requis pour être facile à comprendre ou non</li>
@@ -485,7 +498,7 @@
 				</section>
 
 				<section class="page">
-					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs SNN</h4>
+					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs <span style="text-transform: capitalize;">SNN</span></h4>
 					<div class="content">
 						<br>
 						<div class="highlight" style="font-weight: 600;">Aspect visualisation :</div>
@@ -494,7 +507,7 @@
 						<!--<img src="img/VisSimSNN2.png" alt="" width="80%">-->
 						<table>
 							<thead><tr>
-								<th></th>
+								<th>Simulateur</th>
 								<th>Utilité</th>
 								<th>Complétude</th>
 								<th>Perceptibilité</th>
@@ -523,7 +536,7 @@
 								<td style="font-weight: bold;">+</td>
 								<td style="font-weight: bold;">+</td>
 							</tr>
-							<tr>
+							<tr class="fragment highlight-red">
 								<td>Nengo</td>
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">+</td>
@@ -586,25 +599,32 @@
 						
 						</tbody>
 						</table>
-						<span style="text-align: start;font-size: 26px;padding-top: 15px;">Bien: <span style="font-weight: bold;"> ++</span> | Moyen: <span style="font-weight: bold;">+</span> | Mal: <span style="font-weight: bold;">-</span></span>
+						<div style="text-align: center;font-size: 24px;padding-top: 35px;">Bien: <span style="font-weight: bold;"> ++</span> | Moyen: <span style="font-weight: bold;">+</span> | Mal: <span style="font-weight: bold;">-</span></div>
 						</div>
 					</div>
 					<aside class="notes">
-						Une comparaison des techniques de visualisation proposées par les simulateurs SNN à des fins d’analyse.
+						<ul>
+							<li>
+								On peut voir que Nengo est le meilleur en term du score entre les differents simulateurs
+							</li>
+							<li>
+								On utilise Nengo pour l'enseignement (MASTER NANOSCIENCES ET NANOTECHNOLOGIES)
+							</li>
+						</ul>
 					</aside>
 				</section>
 
 				<section class="page">
-					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs SNN</h4>
+					<h4><span style="text-transform: capitalize;">É</span>tude des techniques de visualisation dans des simulateurs <span style="text-transform: capitalize;">SNN</span></h4>
 					<div class="content">						
 						<br>
 						<div class="statement">
 							<div class="title" style="background-color:#425280;">Conclusion</div>
 							<div class="content">
 								<ul>
-									<li style="padding-bottom: 35px;">La séparation du processus de simulation de celui de visualisation est <span style="font-weight: bold;color:red;">nécessaire</span></li>
 									<li style="padding-bottom: 35px;">Les simulateurs fournissent des visualisations pour la surveillance, pas pour l'analyse</li>
-									<li style="padding-bottom: 35px;">Il existe un besoin d’outils dédiés pour analyse visuelle</li>
+									<li class="fragment" style="padding-bottom: 35px;">La séparation du processus de simulation de celui de visualisation est <span style="font-weight: bold;color:red;">nécessaire</span></li>
+									<li class="fragment" style="padding-bottom: 35px;">Il existe un besoin d’outils dédiés pour analyse visuelle</li>
 								</ul>	
 								</div>
 						</div>
@@ -649,7 +669,7 @@
 								<img src="img/VIOLA.jpg" alt="" width="100%">
 							</div>
 						</div>
-						<div style="padding-top: 32px;">
+						<div class="fragment" style="padding-top: 32px;">
 							Caractéristiques communes:<br>
 							<ul>
 								<li>Outil à base Web</li>
@@ -787,10 +807,14 @@
 				<section class="page">
 					<h4><span style="text-transform: capitalize;">I - MNIST</span></h4>
 					<div class="content" style="text-align: center;">
-						<img src="img/usecase1-2.png" alt="" width="90%">
+						<div class="r-stack">
+							<img class="fragment fade-out" data-fragment-index="1" src="img/usecase1-2.png" alt="" width="100%">
+							<img class="fragment" data-fragment-index="1" src="img/SNNTrain.png" alt="" width="70%">
+							<img class="fragment" data-fragment-index="2" src="img/SNNTrain2.svg" alt="" width="70%">
+						</div>
 						<div style="text-align: start;">
-							<div class="statement fragment">
-							<div class="title" style="background-color:#425280;">Après 50000 entrées</div>
+							<div class="statement">
+							<div class="title" style="background-color:#425280;">On observe que</div>
 							<div class="content">
 								<ol>
 									<li>Augmentation de l’activité synaptique</li>
@@ -857,7 +881,7 @@
 					<div class="content" style="text-align: center;">
 						<img src="img/usecase2-1.png" alt="" width="90%">
 						<div style="text-align: start;">
-							<div class="statement fragment">
+							<div class="statement">
 							<div class="title" style="background-color:#425280;">Après Élagage</div>
 							<div class="content">
 								<ol>
@@ -934,7 +958,7 @@
 					<div class="content">
 						<ul>
 							<li style="padding-bottom: 25px;">Les synapses dans un réseau évoluent avec le nombre de neurones</li>
-							<li>La réduction des synapses génère un réseau plus petit</li>
+							<li>La compression génère un réseau plus petit</li>
 						</ul>
 						<br><br>
 						<div class="statement fragment" style="text-align: start;">
@@ -955,7 +979,12 @@
 						</div>
 						<br>
 						<div class="statement fragment">
-						<div class="title" style="background-color:#1aa137;">L'utilisation d'un seuil dynamique</div>
+						<div class="title" style="background-color:#1aa137;">L'utilisation d'un seuil dynamique<br>
+							<ul>
+								<li class="fragment">On peut retirer les synapses à un stade précoce</li>
+								<li class="fragment">Apprentissage aprés élagage</li>
+							</ul>
+						</div>
 						</div>
 					</div>
 					<aside class="notes">
@@ -973,15 +1002,21 @@
 					</aside>
 				</section>
 
-				<section class="page">
+				<!--<section class="page">
 					<h4><span style="text-transform: capitalize;">C</span>ompression dans les réseaux de neurones à impulsions</h4>
 					<div class="content">
 						<div class="r-hstack">
 							<div style="width: 40%;">
-								<img src="img/snnprogress.svg" alt="" width="100%">
+								<div class="r-stack">
+									<img src="img/snnprogress.svg" alt="" width="100%">
+									<img src="img/snnprogress1.svg" alt="" width="100%">
+								</div>
 							</div>
 							<div class="fragment" style="width: 80%;">
-								<img src="img/SNNTrain.png" alt="" width="100%">
+								<div class="r-stack">
+									<img src="img/SNNTrain.png" alt="" width="100%">
+									<img src="img/SNNTrain2.svg" alt="" width="100%">
+								</div>
 							</div>
 						</div>
 						<br><br>
@@ -994,7 +1029,7 @@
 						</div>
 						</div>
 					</div>
-				</section>
+				</section>-->
 
 				<section class="page">
 					<h4><span style="text-transform: capitalize;">C</span>ompression progressif pour <span style="text-transform: capitalize;">SNN</span></h4>
@@ -1036,7 +1071,7 @@
 						<div class="content">
 							<ul>
 								<li>Le maintien de l’activité moyenne des impulsions dans le réseau</li>
-								<li>
+								<li class="fragment">
 									Un phénomène qui existe aussi en biologie (synaptotrophins et synaptotoxins <span style="font-size: 24px;color: #425280;font-weight: bold;">[1]</span>)
 								</li>
 							</ul>
@@ -1083,10 +1118,16 @@
 							<div style="width: 100%;text-align: center;">
 								<div class="r-hstack">
 									<div style="height: 90vh;text-align: center;width: 50%;">
-										<img src="img/Reconnaissance.svg" alt="" width="100%">
+										<div class="r-stack">
+											<img src="img/Reconnaissance.svg" alt="" width="100%">
+											<img class="fragment" data-fragment-index="2" src="img/Reconnaissance2.svg" alt="" width="100%">
+										</div>
 									</div>
-									<div class="fragment" style="height: 90vh;text-align: center;width: 50%;">
+									<div class="fragment" data-fragment-index="1" style="height: 90vh;text-align: center;width: 50%;">
+										<div class="r-stack">
 										<img src="img/Compression.svg" alt="" width="100%">
+										<img class="fragment" data-fragment-index="2" src="img/Compression2.svg" alt="" width="100%">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1174,7 +1215,7 @@
 							<li>
 								Les simulateurs de SNN fournissent des visualisations non adaptées à l’analyse de réseau.
 							</li>
-							<br>
+							
 							<li>
 								Avec VS2N, nous avons un moyen supplémentaire et différent pour analyser le comportement du réseau.
 							</li>
@@ -1184,7 +1225,7 @@
 							<li>
 								En prenant en charge CSNN, on peut analyser des jeux de données et des architectures plus complexes.
 							</li>
-							<br>
+
 							<li>
 								L’élagage est une technique de compression capable de réduire la taille du réseau pour une implémentation matérielle plus efficace.
 							</li>
@@ -1202,28 +1243,110 @@
 					<h4><span style="text-transform: capitalize;">T</span>ravaux futurs</h4>
 					<div class="content">
 						Gestion des données massives pendant l’analyse
-						<div style="text-align: center;">
-							<img src="">
+						<div style="text-align: center;padding-top: 35px;">
+							<table>
+								<thead><tr>
+									<th># de couches</th>
+									<th>Taille de trace de simulation</th>
+									<th>Temps de simulation</th>
+								</tr></thead>
+								<tbody><tr>
+									<td>1</td>
+									<td>1GB</td>
+									<td>30min</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>40GB</td>
+									<td>2h</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>--</td>
+									<td>--</td>
+								</tr>
+							</tbody>
+							</table>
 						</div>
+						<div class="statement fragment" style="text-align: start;padding-top: 35px;">
+							<div class="title" style="background-color:#425280;">Prétraitement avec Spark:</div>
+							<div class="content">
+								<ul>
+									<li>Nécessite plus de temps</li>
+									<li>Distribution sur plusieurs nœuds de cluster</li>
+								</ul>
+							</div>
+							</div>
 					</div>
+					<aside class="notes">
+						Les prétraitement qui prend beaucoup de temps quand la quantité de donneés est massives
+					</aside>
 				</section>
 
 				<section class="page">
 					<h4><span style="text-transform: capitalize;">T</span>ravaux futurs</h4>
 					<div class="content">
-						Analyse de réseaux de neurones multicouche à impulsions
-						<div style="text-align: center;">
-							<img src="img/VS2NMult1.png">
+						VS2N: Analyse de réseaux de neurones multicouche
+						<div>
+							<div class="r-vstack">
+								<img src="img/VS2NMult1.png" width="75%">
+								<div class="r-hstack" style="width: 100%;">
+									<img class="fragment" src="img/radiolaires.png" width="40%">
+									<img class="fragment" src="img/Freeway.gif" width="20%" style="padding-left: 15px;">
+								</div>
+							</div>
 						</div>
 					</div>
+					<aside class="notes">
+						<ul>
+							<li>
+								Le support du multicouche ouvre les portes sur plusieurs opportunités d'analyse de jeux de donneés et de réseaux plus complexes
+							</li>
+							<li>
+								Des modules adaptés peuvent être ajoutés
+							</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section class="page">
 					<h4><span style="text-transform: capitalize;">T</span>ravaux futurs</h4>
 					<div class="content">
-						Compression pour les réseaux de neurones multicouche à impulsions
-						<div style="text-align: center;">
-							<img src="">
+						Compression pour les réseaux de neurones multicouche
+						<div style="text-align: center;padding-top: 45px;padding-bottom: 45px;">
+							<table class="tableWithBorders">
+								<thead><tr>
+									<th>Architecture</th>
+									<th>Compression</th>
+									<th>Taux de reconnaissance</th>
+									<th>Temps de simulation</th>
+								</tr></thead>
+								<tbody><tr>
+									<td style="vertical-align: middle;" rowspan="2">C1(100) - C2(100) - FC(100)</td>
+									<td>--</td>
+									<td>84.68%</td>
+									<td>6h 4m 17s</td>
+								</tr>
+								<tr>
+									<td style="font-weight: bold;">88.93% - 96.30% - 86.99%</td>
+									<td style="font-weight: bold;">84.95%</td>
+									<td style="font-weight: bold;">6h 36m 20s</td>
+								</tr>
+							</tbody>
+							</table>
+						</div>
+						<div class="statement fragment" style="text-align: start;">
+							<div class="title" style="background-color:#425280;">Approches en cours d'étude</div>
+							<div class="content">
+								<ul>
+									<li class="fragment">La selection et l'optimisation de $\alpha$ et $\beta$</li>
+									<li class="fragment">Sélection de $\alpha$ et $\beta$ en fonction du nombre de neurones de la couche précédente et suivante</li>
+									<li class="fragment">Seuil différent pour les neurones d'une même couche</li>
+								</ul>
+							</div>
+						</div>
+						<div class="fragment" style="text-align: center;">
+							<img src="img/neuromorph.svg" width="60%">
 						</div>
 					</div>
 				</section>
@@ -1234,6 +1357,17 @@
 						Les métriques d’évaluation des SNN<br><br>
 						<div style="text-align: center;">
 							<img src="img/AccuracyVSefficiency.jpg">
+						</div>
+						
+						<div class="statement fragment" style="text-align: start;">
+							<div class="title" style="background-color:#425280;">Google LaMDA</div>
+							<div class="content">
+								<ul>
+									<li class="fragment">Pré-entraîné sur 1024 puces TPU-V3 pendant 57,7 jours</li>
+									<li class="fragment">Consommation énergétique : 451 MWh</li>
+									<li class="fragment">L'équivalent d'alimenter 1000 maisons pendant 10 jours</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</section>
