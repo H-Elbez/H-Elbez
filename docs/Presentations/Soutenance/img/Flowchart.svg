@@ -25,15 +25,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.6945072"
-     inkscape:cx="316.9063"
-     inkscape:cy="255.23645"
+     inkscape:zoom="3.3890144"
+     inkscape:cx="351.57714"
+     inkscape:cy="72.292405"
      inkscape:window-width="1920"
-     inkscape:window-height="1164"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-height="1011"
+     inkscape:window-x="1920"
+     inkscape:window-y="33"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4014">
+     inkscape:current-layer="g4016">
     <inkscape:page
        x="0"
        y="0"
@@ -266,23 +266,6 @@
          id="path4124" />
       <text
          xml:space="preserve"
-         transform="translate(196.98394,12.7304)"
-         style="font-variant:normal;font-weight:normal;font-size:10.2679px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         id="text4132"><tspan
-           x="0 3.0187495 9.518302 12.362497 16.387497 19.231693 25.515619 29.540619 32.384815 38.658474 45.158028 48.412937 54.696865 61.196415 64.451324 68.445518 74.760254 80.099533 86.414268 92.698196"
-           y="0"
-           sodipodi:role="line"
-           id="tspan4126">Initiation au réseau</tspan><tspan
-           x="4.1815534 12.087802 14.931997 21.000299 23.844496 29.183781 35.498512 39.718597 42.973511 45.817707 52.132435 57.471722 60.726631 63.570827 73.571716 79.855644 86.365463 92.680199 98.019478"
-           y="36.352077"
-           sodipodi:role="line"
-           id="tspan4128">Diviser les images </tspan><tspan
-           x="-7.3898368 -0.8800168 1.9333755 8.248106 14.747659 18.772657 22.992746 29.276674 32.120869 38.620422 44.935154 54.936043 61.250774 67.750328 71.775322 75.030235 81.344963 87.844521 91.099426 93.943626 100.21729 104.24228"
-           y="49.186897"
-           sodipodi:role="line"
-           id="tspan4130">d'entraînement en lots</tspan></text>
-      <text
-         xml:space="preserve"
          transform="translate(188.24143,98.992897)"
          style="font-variant:normal;font-weight:normal;font-size:9.22909px;font-family:'DejaVu Sans';-inkscape-font-specification:DejaVuSans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          id="text4140"><tspan
@@ -384,6 +367,33 @@
            y="-10.272277"
            sodipodi:role="line"
            id="tspan4180">Non</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.0257px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.250641"
+         x="248.14168"
+         y="47.999451"
+         id="text367"><tspan
+           sodipodi:role="line"
+           id="tspan365"
+           x="248.14168"
+           y="47.999451"
+           style="text-align:center;text-anchor:middle;stroke-width:0.250641">Diviser les images</tspan><tspan
+           sodipodi:role="line"
+           x="248.14168"
+           y="60.531578"
+           style="text-align:center;text-anchor:middle;stroke-width:0.250641"
+           id="tspan369">d'entraînement par lots</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:11.5666px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.289164"
+         x="247.55984"
+         y="12.736537"
+         id="text467"><tspan
+           sodipodi:role="line"
+           x="247.55984"
+           y="12.736537"
+           style="text-align:center;text-anchor:middle;stroke-width:0.289164"
+           id="tspan465">Initiation au réseau</tspan></text>
     </g>
   </g>
 </svg>
