@@ -76,14 +76,17 @@
 							<img src="img/images.png" alt="", style="width: 45vw;padding: 25px;">
 							<img src="img/medical.jpg" alt="", style="width: 40vw;padding: 25px;">
 						</div>
+						<div class="r-hstack">
 						<img src="img/robotics.gif" alt="", style="width: 40vw;padding: 25px;">
+						<img src="img/acoustics.gif" alt="", style="width: 40vw;padding: 25px;">
+						</div>
 					</div>
 				</section>
 
 				<section class="page">
 					<h4><span style="text-transform: capitalize;">L</span>es réseaux de neurones</h4>
 					<div class="content">
-						<div style="text-align: center;padding-top: 40px;width: 100%;"><img src="img/neuron_and_neuron.svg" width="80%"></div>
+						<div style="text-align: center;padding-top: 20px;width: 100%;"><img src="img/neuron_and_neuron.svg" width="80%"></div>
 						<div class="fragment" style="text-align: center;padding-top: 20px;width: 100%;">
 							<img src="img/Conv.svg" width="80%"></div>
 					</div>
@@ -174,7 +177,7 @@
 					<div class="content">
 					<div class="r-hstack">
 						<div style="width: 70vw;text-align: center;">
-							<img src="img/CNN-SNN.svg" alt="">
+							<img src="img/CNN-SNN.gif" alt="">
 						</div>
 						<div class="fragment" style="width: 50vw;text-align: center;">
 							<img src="img/energy.png" alt="" style="width: 60%;">
@@ -483,7 +486,7 @@
 						<div style="text-align: center;width: 100%;">
 						<!--<img src="img/VisSimSNN2.png" alt="" width="80%">-->
 						<table>
-							<thead><tr>
+							<thead><tr data-fragment-index="0" class="fragment semi-fade-out">
 								<th>Simulateur</th>
 								<th>Utilité</th>
 								<th>Complétude</th>
@@ -493,7 +496,7 @@
 								<th>Esthétique</th>
 								<th>Interactivité</th>
 							</tr></thead>
-							<tbody><tr>
+							<tbody><tr data-fragment-index="0" class="fragment semi-fade-out">
 								<td>NEURON</td>
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">-</td>
@@ -503,7 +506,7 @@
 								<td style="font-weight: bold;">-</td>
 								<td style="font-weight: bold;">+</td>
 							</tr>
-							<tr>
+							<tr data-fragment-index="0" class="fragment semi-fade-out">
 								<td>Brian</td>
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">++</td>
@@ -513,7 +516,7 @@
 								<td style="font-weight: bold;">+</td>
 								<td style="font-weight: bold;">+</td>
 							</tr>
-							<tr class="fragment highlight-red">
+							<tr data-fragment-index="0" class="fragment highlight-red">
 								<td>Nengo</td>
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">+</td>
@@ -523,7 +526,7 @@
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">++</td>
 							</tr>
-							<tr>
+							<tr data-fragment-index="0" class="fragment semi-fade-out">
 								<td>Neuronify</td>
 								<td style="font-weight: bold;">+</td>
 								<td style="font-weight: bold;">-</td>
@@ -533,7 +536,7 @@
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">++</td>
 							</tr>
-							<tr>
+							<tr data-fragment-index="0" class="fragment semi-fade-out">
 								<td>Simbrain</td>
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">++</td>
@@ -543,7 +546,7 @@
 								<td style="font-weight: bold;">+</td>
 								<td style="font-weight: bold;">+</td>
 							</tr>
-							<tr>
+							<tr data-fragment-index="0" class="fragment semi-fade-out">
 								<td>N2S3</td>
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">+</td>
@@ -553,7 +556,7 @@
 								<td style="font-weight: bold;">+</td>
 								<td style="font-weight: bold;">-</td>
 							</tr>
-							<tr>
+							<tr data-fragment-index="0" class="fragment semi-fade-out">
 								<td>NEST</td>
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">+</td>
@@ -563,7 +566,7 @@
 								<td style="font-weight: bold;">+</td>
 								<td style="font-weight: bold;">-</td>
 							</tr>
-							<tr>
+							<tr data-fragment-index="0" class="fragment semi-fade-out">
 								<td>À base de Pytorch</td>
 								<td style="font-weight: bold;">++</td>
 								<td style="font-weight: bold;">+</td>
@@ -687,6 +690,8 @@
 					</div>
 					<aside class="notes">
 						VS2N est un outil Web d’analyse visuelle dynamique interactive pour les réseaux de neurones à impulsions.
+						<br><br>
+						on peut résumer la nouveauté de VS2N
 					</aside>
 				</section>
 
@@ -737,7 +742,10 @@
 						En utilisant l’ensemble de données MNIST:<br>
 						<ul>
 							<li>
-								Une baisse de précision lors des 10000 dernières images de MNIST
+								Une baisse de précision lors de dernier batch de MNIST
+								<li>
+									Un batch = 10000 images
+								</li>
 							</li>
 						</ul>
 						<br><br>
@@ -746,7 +754,7 @@
 								<div class="statement fragment" data-fragment-index="1">
 								<div class="title" style="background-color:#425280;">Objectif</div>
 								<div class="content">
-									Surveillance de l'activité durant les 10000 dernières images
+									Surveillance de l'activité durant le dernièr batch
 								</div>
 								</div>
 								<br>
@@ -783,12 +791,8 @@
 
 				<section class="page">
 					<h4><span style="text-transform: capitalize;">I - MNIST</span></h4>
-					<div class="content" style="text-align: center;">
-						<div class="r-stack">
-							<img class="fragment fade-out" data-fragment-index="1" src="img/usecase1-2.png" alt="" width="100%">
-							<img class="fragment" data-fragment-index="1" src="img/SNNTrain.png" alt="" width="70%">
-							<img class="fragment" data-fragment-index="2" src="img/SNNTrain2.svg" alt="" width="70%">
-						</div>
+					<div class="content" style="text-align: center;">							
+						<img src="img/usecase1-2.png" alt="" width="100%">
 						<div style="text-align: start;">
 							<div class="statement">
 							<div class="title" style="background-color:#425280;">On observe que</div>
@@ -934,8 +938,8 @@
 					<h4><span style="text-transform: capitalize;">C</span>ompression dans les réseaux de neurones à impulsions</h4>
 					<div class="content">
 						<ul>
-							<li style="padding-bottom: 25px;">Les synapses dans un réseau évoluent avec le nombre de neurones</li>
-							<li>La compression génère un réseau plus petit</li>
+							<li style="padding-bottom: 25px;">La compression produit un réseau plus petit</li>
+							<li class="fragment"><span style="font-weight: bold;">Lottery ticket hypothesis :</span><br> "Un réseau de neurones initié de manière aléatoire contient un sous-réseau qui, s'il est isolé et formé seul, peut atteindre la précision du réseau d'origine."</li>
 						</ul>
 						<br><br>
 						<div class="statement fragment" style="text-align: start;">
@@ -956,9 +960,9 @@
 						</div>
 						<br>
 						<div class="statement fragment">
-						<div class="title" style="background-color:#1aa137;">L'utilisation d'un seuil dynamique<br>
+						<div class="title" style="background-color:#1aa137;">L'utilisation d'un seuil dynamique :<br>
 							<ul>
-								<li class="fragment">On peut retirer les synapses à un stade précoce</li>
+								<li class="fragment">Enlevez des synapses à un stade précoce</li>
 								<li class="fragment">Apprentissage après élagage</li>
 							</ul>
 						</div>
@@ -1115,41 +1119,37 @@
 					<h4><span style="text-transform: capitalize;">C</span>onclusion</h4>
 					<div class="content">
 						<ul>
-							<div>
 							<li>
 								Ultra-faible consommation d’énergie avec les réseaux de neurones à impulsions
 							</li>
-							<li>
+							<li class="fragment">
+								Les SNN représentent l'un des candidats pour fournir une puissance de calcul supplémentaire
+							</li>
+							<li class="fragment">
 								Combinaison de la visualisation et de la perception humaine pour une meilleure analyse visuelle
 							</li>
-							<li>
-								Les simulateurs SNN fournissent des visualisations non adaptées à l’analyse visuelle
-							</li>
-							</div>
 							<br>
-							<div class="fragment">
-							<li>
+							<li class="fragment">
+								Les simulateurs SNN fournissent des visualisations non adaptées à l’analyse visuelle
+							</li>	
+							<li class="fragment">
 								Avec VS2N, une manière supplémentaire et différente d’analyser le comportement du réseau
 							</li>
-							<li>
-								Grâce à VS2N, nous avons détecté un problème avec le simulateur utilisé
+							<li class="fragment">
+								L'analyse peut également inclure les jeux de données et le simulateur utilisé
 							</li>
-							<li>
-								Capacité d’analyser des jeux de données et des architectures plus complexes
-							</li>
-							</div>
 							<br>
-							<div class="fragment">
-							<li>
-								L’élagage est capable de réduire la taille du réseau
-							</li>
-							<li>
+
+							<li class="fragment">
 								L’élagage à seuil dynamique est une technique complémentaire
 							</li>
-							<li>
+							<li class="fragment">
 								Le moment d'application de l'élagage dépend de la taille et type du réseau. 
 							</li>
-							</div>
+							<li class="fragment">
+								L’élagage progressif est le résultat d'une analyse avec VS2N 
+							</li>
+
 						</ul>
 					</div>
 					<aside class="notes">
@@ -1157,31 +1157,30 @@
 							<li>
 								Les réseaux de neurones à impulsions permettent une consommation d’énergie ultra-faible.
 							</li>
+							<li>Les SNN représentent l'un des candidats pour fournir une puissance de calcul supplémentaire demandé par les réseaux de neurones modernes.
+							</li>
 							<li>
 								On peut profiter de l’analyse visuelle avec la perception humaine pour mieux représenter de grandes quantités de données.
 							</li>
+							<br><br>
 							<li>
 								Les simulateurs de SNN fournissent des visualisations non adaptées à l’analyse de réseau.
 							</li>
-							
 							<li>
 								Avec VS2N, nous avons un moyen supplémentaire et différent pour analyser le comportement du réseau.
 							</li>
 							<li>
 								Grâce à l’analyse visuelle avec VS2N, nous avons pu détecter un problème au niveau du simulateur utilisé.
 							</li>
+							<br><br>
 							<li>
-								En prenant en charge CSNN, on peut analyser des jeux de données et des architectures plus complexes.
-							</li>
-
-							<li>
-								L’élagage est une technique de compression capable de réduire la taille du réseau pour une implémentation matérielle plus efficace.
-							</li>
-							<li>
-								L’élagage progressif à seuil dynamique est une technique complémentaire à celles existantes.
+								L’élagage progressif à seuil dynamique est une technique complémentaire à celles existantes (quantification du poids)
 							</li>
 							<li>
 								Le moment d'application de l'élagage dépend de la taille et du type de réseau. 
+							</li>
+							<li>
+								L’élagage progressif est le résultat d'une analyse de comportement du réseau faite par VS2N
 							</li>
 						</ul>
 					</aside>
@@ -1200,7 +1199,7 @@
 								</tr></thead>
 								<tbody><tr>
 									<td>1</td>
-									<td>1GB</td>
+									<td>1.5GB</td>
 									<td>30min</td>
 								</tr>
 								<tr>
@@ -1237,10 +1236,20 @@
 						VS2N: Analyse de réseaux de neurones multicouches
 						<div>
 							<div class="r-vstack">
-								<img src="img/VS2NMult1.png" width="75%">
-								<div class="r-hstack" style="width: 100%;">
-									<img class="fragment" src="img/radiolaires.png" width="40%">
-									<img class="fragment" src="img/Freeway.gif" width="20%" style="padding-left: 15px;">
+								<img src="img/VS2NMult1.png" style="width: 90%">
+								<div class="r-hstack fragment" style="width: 100%;">
+								<div class="r-vstack" style="width: 35%">
+									Radiolaires
+									<img src="img/radiolaires.png" style="width: 100%">
+								</div>
+								<div class="r-vstack" style="padding-left: 15px;">
+									Caméra événementielle
+									<img src="img/Freeway.gif" style="width: 100%" >
+								</div>
+								<div class="r-vstack" style="padding-left: 15px;">
+									signaux acoustiques
+									<img src="img/AudioWave.png" style="width: 100%" >
+								</div>
 								</div>
 							</div>
 						</div>
@@ -1293,8 +1302,9 @@
 								</ul>
 							</div>
 						</div>
-						<div class="fragment" style="text-align: center;">
-							<img src="img/neuromorph.svg" width="60%">
+						<div class="fragment r-hstack" style="text-align: center;">
+							<img src="img/neuromorph.svg" width="60%" style="padding-right: 35px;">
+							<img src="img/MpSoc102.jpg" width="20%">
 						</div>
 					</div>
 				</section>
