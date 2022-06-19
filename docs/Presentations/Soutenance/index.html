@@ -70,7 +70,6 @@
 				</section>
 
 				<section class="page">
-					<!-- <h4>Réseaux de neurones dans différents domaines</h4>-->
 					<div class="content" style="text-align: center;">
 						<div class="r-hstack">
 							<img src="img/images.png" alt="", style="width: 45vw;padding: 25px;">
@@ -79,6 +78,46 @@
 						<div class="r-hstack">
 						<img src="img/robotics.gif" alt="", style="width: 40vw;padding: 25px;">
 						<img src="img/acoustics.gif" alt="", style="width: 40vw;padding: 25px;">
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<div class="content" style="text-align: center;">
+						<div class="r-hstack">
+							<div class="r-vstack" style="text-align: right;">
+								<p>Architecture de von Neumann</p>
+							<img src="img/Von_Neumann_architecture.svg" alt="", style="width: 25vw;padding: 25px;"></div>
+							<div>
+								<img class="fragment" src="img/50-years-processor-trend.png" alt="", style="width: 50vw;padding: 25px;">
+							</div>
+						</div>
+						<div class="fragment" style="text-align: start;">
+							<ul>
+								<li>La limite de l’architecture de Von Neumann</li>
+								<li>La fin de la loi de Moore:
+									<ul>
+									<li>
+										problème de dissipation de chaleur
+									</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="page">
+					<div class="content">
+						<div class="r-hstack" style="height: 70vh;">
+							<div class="r-vstack" style="width: 50%;">
+								Calcul quantique
+								<img src="img/Picture2.svg" alt="" width="50%">
+							</div>
+							<div class="r-vstack" style="width: 50%;">
+								Architectures neuromorphiques
+								<img src="img/Picture1.svg" alt="" width="50%">
+							</div>
 						</div>
 					</div>
 				</section>
@@ -115,12 +154,7 @@
 										<ul>
 											<li>l’énorme consommation d’énergie</li>
 											<li>le besoin de beaucoup de données pour être performant</li>
-											<li>Le besoin de puissance de calcul supplémentaire:
-												<ul>
-													<li style="color: #a11a1a;">La limite de l’architecture de Von Neumann</li>
-													<li style="color: #a11a1a;">La fin de la loi de Moore</li>
-												</ul>
-											</li>
+											<li>Le besoin de puissance de calcul supplémentaire</li>
 										</ul>
 								</div>
 								</div>
@@ -1274,62 +1308,63 @@
 							<table class="tableWithBorders">
 								<thead><tr>
 									<th>Jeu de données</th>
-									<th>Architecture</th>
-									<th>Compression</th>
-									<th>Taux de reconnaissance</th>
-									<th>Temps de simulation</th>
+									<th class="fragment" data-fragment-index="0">Architecture</th>
+									<th class="fragment" data-fragment-index="1">Compression</th>
+									<th class="fragment" data-fragment-index="2">Taux de reconnaissance</th>
+									<th class="fragment" data-fragment-index="2">Temps de simulation</th>
 								</tr></thead>
 								<tbody>
-									<tr>
-										<td style="vertical-align: middle;" rowspan="2">MNIST</td>
-										<td style="vertical-align: middle;" rowspan="2">C1(100) - C2(100)</td>
-										<td>--</td>
-										<td>98.9%</td>
-										<td>26m 31s</td>
-									</tr>
-									<tr>
-										<td style="font-weight: bold;">77.75% - 95.86%</td>
-										<td style="font-weight: bold;">98.75%</td>
-										<td style="font-weight: bold;">26m 10s</td>
-									</tr>
-
-									<tr>
-									<td style="vertical-align: middle;" rowspan="2">FMNIST</td>
-									<td style="vertical-align: middle;" rowspan="2">C1(100) - C2(100) - FC(100)</td>
-									<td>--</td>
-									<td>84.68%</td>
-									<td>6h 4m 17s</td>
-								</tr>
-								<tr>
-									<td style="font-weight: bold;">88.93% - 96.30% - 86.99%</td>
-									<td style="font-weight: bold;">84.95%</td>
-									<td style="font-weight: bold;">6h 36m 20s</td>
-								</tr>
 
 								<tr>
 									<td style="vertical-align: middle;" rowspan="2">CIFAR-10</td>
-									<td style="vertical-align: middle;" rowspan="2">C1(100)</td>
-									<td>--</td>
-									<td>54.63%</td>
-									<td>2h 21m 34s</td>
+									<td class="fragment" data-fragment-index="0" style="vertical-align: middle;" rowspan="2">C1(100)</td>
+									<td class="fragment" data-fragment-index="1">--</td>
+									<td class="fragment" data-fragment-index="2">54.63%</td>
+									<td class="fragment" data-fragment-index="2">2h 21m 34s</td>
 								</tr>
 								<tr>
-									<td style="font-weight: bold;">72.79%</td>
-									<td style="font-weight: bold;">54.84%</td>
-									<td style="font-weight: bold;">2h 21m 6s</td>
+									<td class="fragment" data-fragment-index="1" style="font-weight: bold;">72.79%</td>
+									<td class="fragment" data-fragment-index="2" style="font-weight: bold;">54.84%</td>
+									<td class="fragment" data-fragment-index="2" style="font-weight: bold;">2h 21m 6s</td>
+								</tr>
+								
+								<tr>
+									<td style="vertical-align: middle;" rowspan="2">STL-10</td>
+									<td class="fragment" data-fragment-index="0" style="vertical-align: middle;" rowspan="2">C1(100)</td>
+									<td class="fragment" data-fragment-index="1">--</td>
+									<td class="fragment" data-fragment-index="2">58.61%</td>
+									<td class="fragment" data-fragment-index="2">1h 59m 15s</td>
+								</tr>
+								<tr>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="1" >93.26%</td>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="2">58.41%</td>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="2">1h 59m 13s</td>
+								</tr>
+								
+								<tr>
+									<td style="vertical-align: middle;" rowspan="2">FMNIST</td>
+									<td class="fragment" data-fragment-index="0" style="vertical-align: middle;" rowspan="2">C1(100) - C2(100) - FC(100)</td>
+									<td class="fragment" data-fragment-index="1">--</td>
+									<td class="fragment" data-fragment-index="2">84.68%</td>
+									<td class="fragment" data-fragment-index="2">6h 4m 17s</td>
+								</tr>
+								<tr>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="1">88.93% - 96.30% - 86.99%</td>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="2">84.95%</td>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="2">6h 36m 20s</td>
 								</tr>
 
 								<tr>
 									<td style="vertical-align: middle;" rowspan="2">Podocrytis (Radiolaires)</td>
-									<td style="vertical-align: middle;" rowspan="2">C1(50) - C2(50) - FC(50)</td>
-									<td>--</td>
-									<td>54.63%</td>
-									<td>2h 21m 34s</td>
+									<td class="fragment" data-fragment-index="0" style="vertical-align: middle;" rowspan="2">C1(50) - C2(50) - FC(50)</td>
+									<td class="fragment" data-fragment-index="1">--</td>
+									<td class="fragment" data-fragment-index="2">54.63%</td>
+									<td class="fragment" data-fragment-index="2">2h 21m 34s</td>
 								</tr>
 								<tr>
-									<td style="font-weight: bold;">72.79%</td>
-									<td style="font-weight: bold;">54.84%</td>
-									<td style="font-weight: bold;">2h 21m 6s</td>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="1">72.79%</td>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="2">54.84%</td>
+									<td style="font-weight: bold;" class="fragment" data-fragment-index="2">2h 21m 6s</td>
 								</tr>
 							</tbody>
 							</table>
