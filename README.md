@@ -15,7 +15,7 @@ I had the chance to be a speaker at different events, like TedX, WikiStage about
   
 <a href="https://scholar.google.com/citations?user=DcvhttMAAAAJ&hl=en">Here</a> you find my research contributions.
   
-You can find in this <a href="https://github.com/Timodz/MyPresentations">repository</a> some of my presentations.
+You can find in this <a href="https://github.com/H-Elbez/H-Elbez/tree/main/docs/Presentations">repository</a> some of my presentations.
 <br><br>
 <br><br>
 </div>

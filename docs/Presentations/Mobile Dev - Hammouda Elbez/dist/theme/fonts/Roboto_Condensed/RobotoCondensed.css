@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('RobotoCondensed-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('RobotoCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('RobotoCondensed-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('RobotoCondensed-LightItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
