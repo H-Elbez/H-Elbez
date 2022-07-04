@@ -5,9 +5,8 @@
 <img width="300" align='right' src="img/me.jpg">
 
 <div style="width:50%; text-align:justify;">
-🔭  I'm currently doing a Ph.D. in computer science, working on Spiking neural networks (SNNs) and interactive analysis. In addition, I'm a mobile app developer with a couple of years of experience—a big fan of Linux and Open Source.<br><br>
+🔭  I have a Ph.D. in computer science. My research revolves around the interactive analysis of Spiking neural networks (SNNs) to understand such networks better and propose improvements. In addition, I'm a mobile app developer with a couple of years of experience—a big fan of Linux and Open Source.<br><br>
 🌱 I'm also learning about Pytorch and how to exploit it using Flutter for mobile-based applications around AI.<br><br>
-👯 I am Looking to collaborate on anything related to my research topic or an exciting project related to AI.
 <br><br>
 I am a co-organizer at the Google Developers Group chapter of Ghardaia, a Flutter trainer, and a member at the CSO (Club Scientifique des Oasis).<br><br>
 
