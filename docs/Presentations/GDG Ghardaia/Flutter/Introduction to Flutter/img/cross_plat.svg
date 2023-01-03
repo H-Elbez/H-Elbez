@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="1032.96"
+   height="594.56"
+   viewBox="0 0 1032.96 594.56"
+   sodipodi:docname="cross_plat.svg"
+   inkscape:version="1.2.2 (1:1.2.2+202212051550+b0a8486541)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath901">
+      <rect
+         style="fill:#ff7878;fill-opacity:0.475743;stroke-width:3.21306"
+         id="rect903"
+         width="1032.96"
+         height="383.6308"
+         x="0"
+         y="137.45338" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.11808388"
+     inkscape:cx="-2206.0589"
+     inkscape:cy="1346.5005"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1766" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g8">
+    <g
+       id="g1766"
+       transform="translate(0,-486.75597)">
+      <g
+         id="g5843"
+         transform="matrix(2.567759,0,0,2.567759,-1203.3784,-1664.3136)"
+         inkscape:export-filename="g5843.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <g
+           id="g1742"
+           transform="translate(-1085.6096,612.37604)">
+          <rect
+             style="fill:#008d33;fill-opacity:1;stroke-width:4"
+             id="rect905"
+             width="555.4342"
+             height="122.25474"
+             x="112.00474"
+             y="407.81256"
+             ry="27.580906" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none"
+             x="272.12418"
+             y="483.52002"
+             id="text961"><tspan
+               sodipodi:role="line"
+               id="tspan959"
+               x="272.12418"
+               y="483.52002">HARDWARE</tspan></text>
+        </g>
+        <g
+           id="g1750"
+           transform="translate(-1085.6096,450.12405)">
+          <rect
+             style="fill:#12008d;fill-opacity:1;stroke-width:4"
+             id="rect1744"
+             width="555.4342"
+             height="122.25474"
+             x="112.00474"
+             y="407.81256"
+             ry="27.580906" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none"
+             x="223.32535"
+             y="479.9751"
+             id="text1748"><tspan
+               sodipodi:role="line"
+               id="tspan1746"
+               x="223.32535"
+               y="479.9751">Native Approach</tspan></text>
+        </g>
+        <g
+           id="g1758"
+           transform="translate(-1085.6096,287.87206)">
+          <rect
+             style="fill:#8d3100;fill-opacity:1;stroke-width:4"
+             id="rect1752"
+             width="555.4342"
+             height="122.25474"
+             x="112.00474"
+             y="407.81256"
+             ry="27.580906" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none"
+             x="142.53433"
+             y="479.9751"
+             id="text1756"><tspan
+               sodipodi:role="line"
+               id="tspan1754"
+               x="142.53433"
+               y="479.9751">Cross-Platform Approach</tspan></text>
+        </g>
+        <rect
+           style="fill:#8d7d00;fill-opacity:1;stroke-width:4"
+           id="rect1760"
+           width="555.4342"
+           height="122.25474"
+           x="-973.60486"
+           y="533.43262"
+           ry="27.580906" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none"
+           x="-863.5733"
+           y="605.59515"
+           id="text1764"><tspan
+             sodipodi:role="line"
+             id="tspan1762"
+             x="-863.5733"
+             y="605.59515">Hybrid Approach</tspan></text>
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
+           d="m -1065.3609,522.45237 1.0905,498.17413"
+           id="path3333"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:55.9881px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.3997"
+           x="-1313.7637"
+           y="764.19067"
+           id="text3556"><tspan
+             sodipodi:role="line"
+             x="-1313.7637"
+             y="764.19067"
+             id="tspan4296"
+             style="stroke-width:1.3997">More </tspan><tspan
+             sodipodi:role="line"
+             x="-1313.7637"
+             y="834.17578"
+             id="tspan5038"
+             style="stroke-width:1.3997">control</tspan></text>
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleStart)"
+           d="m -336.90231,1035.8914 1.0905,-498.17415"
+           id="path5044"
+           inkscape:connector-type="polyline"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:55.9881px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.3997"
+           x="-269.92416"
+           y="764.19067"
+           id="text5050"><tspan
+             sodipodi:role="line"
+             x="-269.92416"
+             y="764.19067"
+             id="tspan5048"
+             style="stroke-width:1.3997">Fewer </tspan><tspan
+             sodipodi:role="line"
+             x="-269.92416"
+             y="834.17578"
+             style="stroke-width:1.3997"
+             id="tspan5800">possibilities</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
