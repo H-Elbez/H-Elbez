@@ -5,8 +5,9 @@
 <img width="300" align='right' src="img/me.jpg">
 
 <div style="width:50%; text-align:justify;">
-🔭  I have a Ph.D. in computer science. My research revolves around the interactive analysis of Spiking neural networks (SNNs) to understand such networks better and propose improvements. In addition, I'm a mobile app developer with a couple of years of experience—a big fan of Linux and Open Source.<br><br>
-I am a co-organizer at the Google Developers Group chapter of Ghardaia, a Flutter trainer, and a member of the CSO (Club Scientifique des Oasis). Furthermore, I had the chance to be a speaker at different events, like TedX and WikiStage, about topics mainly related to tech.<br><br>
+🔭  I am currently an AI R&D Engineer at CITC-EuraRFID, holding a Ph.D. in computer science. My research focuses on the interactive analysis of Spiking Neural Networks (SNNs) to gain deeper insights into these networks and propose enhancements. Additionally, I have several years of experience as a mobile app developer.<br><br>
+  
+Furthermore, I actively contribute to the tech community as a co-organizer at the Google Developers Group in Ghardaia, where I also serve as a Flutter trainer. Additionally, I am a member of the Club Scientifique des Oasis (CSO). My expertise extends beyond research and development; I have had the privilege of speaking at events like TedX and WikiStage, addressing topics primarily related to technology.<br><br>
   
 <a href="https://scholar.google.com/citations?user=DcvhttMAAAAJ&hl=en">My research contributions</a>
   
