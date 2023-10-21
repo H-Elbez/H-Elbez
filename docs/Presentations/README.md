@@ -2,6 +2,5 @@
 My different presentations on different topics
 ---
 
-## How does it work ? 
-Every folder represents a presentation in different topics, you will
-find all the content inside it.
+## How does it work? 
+Every folder represents a presentation on different topics. You will find all the content inside.
