@@ -16,13 +16,6 @@ Furthermore, I actively contribute to the tech community as a co-organizer at th
 <br><br>
 </div>
 
-<p style="margin:100px;">
-  
-[![Hammouda's GitHub stats](https://github-readme-stats.vercel.app/api?username=H-Elbez&card_width=400)](https://github.com/anuraghazra/github-readme-stats)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=H-Elbez&layout=compact&card_width=400)](https://github.com/anuraghazra/github-readme-stats)
-</p>
-
 <p align='center'>
 <a href="https://www.linkedin.com/in/elbez-hammouda/"><img height="30" src="img/linkedin.png"></a>
 &nbsp;&nbsp;
