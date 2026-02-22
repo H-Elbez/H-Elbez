@@ -18,8 +18,4 @@ Furthermore, I actively contribute to the tech community as a co-organizer at th
 
 <p align='center'>
 <a href="https://www.linkedin.com/in/elbez-hammouda/"><img height="30" src="img/linkedin.png"></a>
-&nbsp;&nbsp;
-<a href="https://twitter.com/elbezhammouda"><img height="30" src="img/twitter.png"></a>
-&nbsp;&nbsp;
-<a href="https://www.facebook.com/hammouda.Elbez"><img height="30" src="img/facebook.png"></a>
 </p>
